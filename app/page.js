@@ -1,12 +1,20 @@
 import Layout from './components/Layout'
+import HeroSection from './components/home/HeroSection'
+import MamasParadiseSection from './components/home/MamasParadiseSection'
+import SunsetOasisSection from './components/home/SunsetOasisSection'
+
 export default function Home() {
   return (
-    <Layout>
-      <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-        <div className='z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex'>
-          <h1>Website</h1>
-        </div>
-      </main>
-    </Layout>
+      <Layout>
+        <main>
+          <div>
+            <h1>Dominican Vacation Homes</h1>
+            <p>Check out our two beautiful vacation homes!</p>
+          </div>
+          <HeroSection />
+          <MamasParadiseSection />
+          <SunsetOasisSection />
+        </main>
+      </Layout>
   )
 }

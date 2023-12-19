@@ -4,7 +4,9 @@ export default function Layout({ children }) {
     <>
       <Navbar />
       {children}
-      <footer className='w-full h-10 bg-purple-800'>Footer</footer>
+      <footer className='w-full h-10 bg-purple-800'>
+        <p className='text-center text-white'>Footer</p>
+      </footer>
     </>
   )
 }

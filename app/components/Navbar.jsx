@@ -6,8 +6,8 @@ export default function Navbar() {
   let router = usePathname()
 
   return (
-    <nav className='flex bg-blue-50 h-14 border-b border-secondary shadow shadow-secondary'>
-      <ul className='w-full flex justify-around text-primary items-end'>
+    <nav className='flex border-b shadow h-14 bg-blue-50 border-secondary shadow-secondary'>
+      <ul className='flex items-end justify-around w-full text-primary lg:px-40'>
         <Link className='basis-1/2' href='/'>
           Logo
         </Link>
