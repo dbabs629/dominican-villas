@@ -1,29 +1,30 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import mamasparadise from '../../../public/images/mamas-paradise/mamas-paradise-img-1.jpg'
 
 export default function MamasParadiseSection() {
   return (
-    <section>
-      <div>
+    <section className='relative flex flex-col w-full my-40'>
+      <div className='w-full'>
         <Image
-          className='w-20'
-          src='/images/mamas-paradise/mamas-paradise-img-01.jpg'
+          className='h-auto max-w-full'
+          src={mamasparadise}
           width='4559'
           height='2577'
           alt='something 2'
+          placeholder='blur'
         />
       </div>
-      <div>
-        <h5>Mama's Paradise</h5>
-        <p>
-          Get ready to experience the ultimate luxury family vacation in the
-          heart of Sousa, Dominican Republic! Our two brand new vacation homes
-          are the definition of paradise, offering everything you need for an
-          unforgettable getaway!
+      <div className='absolute flex flex-col w-1/4 p-8 space-y-4 text-lg text-white bg-blue-400 rounded-lg right-20 -bottom-20'>
+        <h5 className='font-bold'>Mama's Paradise</h5>
+        <p className='font-semibold text-justify'>
+          Get ready to experience the ultimate luxury family vacation in the heart of Sousa, Dominican Republic! Our two
+          brand new vacation homes are the definition of paradise, offering everything you need for an unforgettable
+          getaway!
         </p>
-      </div>
-      <div>
-        <Link href='/mamas-paradise'>View Mama's Paradise</Link>
+        <Link className='font-semibold underline' href='/mamas-paradise'>
+          View Mama's Paradise
+        </Link>
       </div>
     </section>
   )
