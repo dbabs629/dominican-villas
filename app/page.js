@@ -1,8 +1,8 @@
 import PageHeading from './components/PageHeading'
 import Layout from './components/Layout'
-import HeroSection from './components/home/HeroSection'
-import MamasParadiseSection from './components/home/MamasParadiseSection'
-import SunsetOasisSection from './components/home/SunsetOasisSection'
+import HeroSection from './components/HeroSection'
+import MamasParadiseSection from './components/MamasParadiseSection'
+import SunsetOasisSection from './components/SunsetOasisSection'
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import mamasparadise from '../../../public/images/mamas-paradise/mamas-paradise-img-2.jpg'
-import sunsetoasis from '../../../public/images/sunset-oasis/sunset-oasis-img-2.jpg'
+import mamasparadise from '../../public/images/mamas-paradise/mamas-paradise-img-2.jpg'
+import sunsetoasis from '../../public/images/sunset-oasis/sunset-oasis-img-2.jpg'
 
 export default function HeroSection() {
   return (

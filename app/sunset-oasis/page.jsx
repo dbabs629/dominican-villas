@@ -1,10 +1,13 @@
+'use client'
+import { useState } from 'react'
 import Layout from '../components/Layout'
-import Carousel from '../components/properties/Carousel'
-import Gallery from '../components/properties/Gallery'
+import Carousel from '../components/Carousel'
+import Gallery from '../components/Gallery'
 import PageHeading from '../components/PageHeading'
-import SectionHeading from '../components/properties/SectionHeading'
+import SectionHeading from '../components/SectionHeading'
 
 export default function page() {
+  const [currentImgNum, setCurrentImgNum] = useState(1)
   return (
     <Layout>
       <main>
@@ -13,9 +16,15 @@ export default function page() {
           <Carousel
             numOfImgs={2}
             imgPath='/images/sunset-oasis/sunset-oasis-img-'
-            smallImgPath='/images/sunset-oasis/sunset-oasis-img-small-'
+            currentImgNum={currentImgNum}
+            setCurrentImgNum={setCurrentImgNum}
           />
-          <Gallery numOfImgs={2} imgPath='/images/sunset-oasis/sunset-oasis-img-' />
+          <Gallery
+            numOfImgs={2}
+            imgPath='/images/sunset-oasis/sunset-oasis-img-'
+            currentImgNum={currentImgNum}
+            setCurrentImgNum={setCurrentImgNum}
+          />
         </div>
         <div>
           <SectionHeading title='About' />

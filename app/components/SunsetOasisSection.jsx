@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import sunsetoasis from '../../../public/images/sunset-oasis/sunset-oasis-img-2.jpg'
+import sunsetoasis from '../../public/images/sunset-oasis/sunset-oasis-img-2.jpg'
 
 export default function SunsetOasisSection() {
   return (

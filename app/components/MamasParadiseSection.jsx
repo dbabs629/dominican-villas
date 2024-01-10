@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import mamasparadise from '../../../public/images/mamas-paradise/mamas-paradise-img-1.jpg'
+import mamasparadise from '../../public/images/mamas-paradise/mamas-paradise-img-1.jpg'
 
 export default function MamasParadiseSection() {
   return (
