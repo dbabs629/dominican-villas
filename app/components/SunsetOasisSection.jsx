@@ -8,8 +8,8 @@ export default function SunsetOasisSection() {
         <Image
           className='h-auto max-w-full'
           src='/images/sunset-oasis/sunset-oasis-img-2.jpg'
-          width='1024'
-          height='758'
+          fill={true}
+          style={{ objectFit: 'cover' }}
           alt='something 2'
           placeholder='blur'
           blurDataURL='/images/sunset-oasis/sunset-oasis-img-2.jpg'

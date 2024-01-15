@@ -18,6 +18,8 @@ export default function ImageModal({ displayModal, setDisplayModal, imgPath, cur
             className='p-10 mt-4'
             src={`${imgPath}${currentImgNum}.jpg`}
             alt='image'
+            placeholder='blur'
+            blurDataURL={`${imgPath}${currentImgNum}.jpg`}
             fill={true}
             style={{ objectFit: 'contain' }}
             onClick={handleClick}

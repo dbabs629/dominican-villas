@@ -8,8 +8,8 @@ export default function MamasParadiseSection() {
         <Image
           className='h-auto max-w-full'
           src='/images/mamas-paradise/mamas-paradise-img-1.jpg'
-          width='4559'
-          height='2577'
+          fill={true}
+          style={{ objectFit: 'cover' }}
           alt='something 2'
           placeholder='blur'
           blurDataURL='/images/mamas-paradise/mamas-paradise-img-1.jpg'

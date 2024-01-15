@@ -6,22 +6,22 @@ export default function HeroSection() {
       <div className='flex justify-center w-3/5 p-20 mx-auto space-x-20 border shadow rounded-xl'>
         <div className='relative flex flex-col w-1/2'>
           <Image
-            className='z-10 h-auto max-w-full rounded-xl'
+            className='max-w-full bg-gray-300 rounded-xl'
             src='/images/mamas-paradise/mamas-paradise-smaller.jpg'
             placeholder='blur'
-            width='5528'
-            height='4150'
+            blurDataURL='/images/mamas-paradise/mamas-paradise-img-2.jpg'
+            fill={true}
+            style={{ objectFit: 'cover' }}
             alt='something'
-            blurDataURL='../public/images/mamas-paradise/mamas-paradise-img-2.jpg'
           />
           <Image
             className='max-w-full rounded-xl'
             src='/images/sunset-oasis/sunset-oasis-img-2.jpg'
             placeholder='blur'
-            width='1012'
-            height='768'
+            blurDataURL='/images/sunset-oasis/sunset-oasis-img-2.jpg'
+            fill={true}
+            style={{ objectFit: 'cover' }}
             alt='something 2'
-            blurDataURL='../public/images/sunset-oasis/sunset-oasis-img-2.jpg'
           />
         </div>
         <div className='flex flex-col w-2/5 space-y-10 text-blue-900'>
