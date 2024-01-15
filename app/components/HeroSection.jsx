@@ -7,7 +7,7 @@ export default function HeroSection() {
         <div className='relative flex flex-col w-1/2'>
           <Image
             className='z-10 h-auto max-w-full rounded-xl'
-            src='/images/mamas-paradise/mamas-paradise-img-2.jpg'
+            src='/images/mamas-paradise/mamas-paradise-smaller.jpg'
             placeholder='blur'
             width='5528'
             height='4150'
