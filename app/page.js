@@ -1,12 +1,10 @@
+import Image from 'next/image'
 import PageHeading from './components/PageHeading'
 import Layout from './components/Layout'
 import HeroSection from './components/HeroSection'
 import MamasParadiseSection from './components/MamasParadiseSection'
 import SunsetOasisSection from './components/SunsetOasisSection'
 import SectionHeading from './components/SectionHeading'
-import Image from 'next/image'
-import sousaimg1 from '../public/images/sousa-img-1.PNG'
-import sousaimg2 from '../public/images/sousa-img-2.PNG'
 
 export default function Home() {
   return (
@@ -24,14 +22,14 @@ export default function Home() {
           <div>
             <Image
               className='object-cover h-auto max-w-full rounded-xl'
-              src={sousaimg1}
+              src='/images/sousa-img-2.PNG'
               width='1875'
               height='622'
               alt='something 2'
             />
             <Image
               className='object-cover h-auto max-w-full rounded-xl'
-              src={sousaimg2}
+              src='/images/sousa-img-2.PNG'
               width='746'
               height='596'
               alt='something 2'

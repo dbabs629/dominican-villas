@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import sunsetoasis from '../../public/images/sunset-oasis/sunset-oasis-img-2.jpg'
 
 export default function SunsetOasisSection() {
   return (
@@ -8,11 +7,12 @@ export default function SunsetOasisSection() {
       <div className='w-full'>
         <Image
           className='h-auto max-w-full'
-          src={sunsetoasis}
+          src='/images/sunset-oasis/sunset-oasis-img-2.jpg'
           width='1024'
           height='758'
           alt='something 2'
           placeholder='blur'
+          blurDataURL='/images/sunset-oasis/sunset-oasis-img-2.jpg'
         />
       </div>
       <div className='absolute flex flex-col w-1/4 p-8 space-y-4 text-lg text-white bg-blue-400 rounded-lg right-20 -bottom-20'>

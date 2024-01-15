@@ -1,23 +1,34 @@
 'use client'
 import { useState } from 'react'
+import Image from 'next/image'
 import Layout from '../components/Layout'
 import Carousel from '../components/Carousel'
 import Gallery from '../components/Gallery'
 import PageHeading from '../components/PageHeading'
 import SectionHeading from '../components/SectionHeading'
+import ImageModal from '../components/ImageModal'
 
 export default function page() {
   const [currentImgNum, setCurrentImgNum] = useState(1)
+  const [displayModal, setDisplayModal] = useState(true)
+
   return (
     <Layout>
       <main>
         <div>
-          <PageHeading title='Sunset Oasis' />
+          <PageHeading title='Sunset Oasis' />{' '}
+          <ImageModal
+            displayModal={displayModal}
+            setDisplayModal={setDisplayModal}
+            imgPath='/images/sunset-oasis/sunset-oasis-img-'
+            currentImgNum={currentImgNum}
+          />
           <Carousel
             numOfImgs={2}
             imgPath='/images/sunset-oasis/sunset-oasis-img-'
             currentImgNum={currentImgNum}
             setCurrentImgNum={setCurrentImgNum}
+            setDisplayModal={setDisplayModal}
           />
           <Gallery
             numOfImgs={2}
@@ -44,6 +55,13 @@ export default function page() {
         </div>
         <div>
           <SectionHeading title='Location Information' />
+          <Image
+            className='z-10 w-full rounded-xl'
+            src='/images/siednji-leon-PO3mXAkAI4c-unsplash.jpg'
+            width='5184'
+            height='3456'
+            alt='something'
+          />
           <p>
             These two villas have everything you will ever need on your vacation. It is located 15 minutes away from the
             airport, a 5 minute drive to the town of Sosua where you will find all your necessary needs: 3 beaches,

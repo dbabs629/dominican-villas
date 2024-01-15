@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import mamasparadise from '../../public/images/mamas-paradise/mamas-paradise-img-2.jpg'
-import sunsetoasis from '../../public/images/sunset-oasis/sunset-oasis-img-2.jpg'
 
 export default function HeroSection() {
   return (
@@ -9,19 +7,21 @@ export default function HeroSection() {
         <div className='relative flex flex-col w-1/2'>
           <Image
             className='z-10 h-auto max-w-full rounded-xl'
-            src={mamasparadise}
+            src='/images/mamas-paradise/mamas-paradise-img-2.jpg'
             placeholder='blur'
             width='5528'
             height='4150'
             alt='something'
+            blurDataURL='../public/images/mamas-paradise/mamas-paradise-img-2.jpg'
           />
           <Image
             className='max-w-full rounded-xl'
-            src={sunsetoasis}
+            src='/images/sunset-oasis/sunset-oasis-img-2.jpg'
             placeholder='blur'
             width='1012'
             height='768'
             alt='something 2'
+            blurDataURL='../public/images/sunset-oasis/sunset-oasis-img-2.jpg'
           />
         </div>
         <div className='flex flex-col w-2/5 space-y-10 text-blue-900'>

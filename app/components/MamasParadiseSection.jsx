@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import mamasparadise from '../../public/images/mamas-paradise/mamas-paradise-img-1.jpg'
 
 export default function MamasParadiseSection() {
   return (
@@ -8,11 +7,12 @@ export default function MamasParadiseSection() {
       <div className='w-full'>
         <Image
           className='h-auto max-w-full'
-          src={mamasparadise}
+          src='/images/mamas-paradise/mamas-paradise-img-1.jpg'
           width='4559'
           height='2577'
           alt='something 2'
           placeholder='blur'
+          blurDataURL='/images/mamas-paradise/mamas-paradise-img-1.jpg'
         />
       </div>
       <div className='absolute flex flex-col w-1/4 p-8 space-y-4 text-lg text-white bg-blue-400 rounded-lg right-20 -bottom-20'>
