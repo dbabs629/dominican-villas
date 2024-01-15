@@ -4,7 +4,8 @@ import Link from 'next/link'
 export default function SunsetOasisSection() {
   return (
     <section className='relative flex flex-col w-full my-40'>
-      <div className='w-full'>
+      <div className='max-w-full h-[675px]'>
+        <span className='absolute w-full h-full bg-gray-300 animate-pulse rounded-xl' />
         <Image
           className='h-auto max-w-full'
           src='/images/sunset-oasis/sunset-oasis-img-2.jpg'

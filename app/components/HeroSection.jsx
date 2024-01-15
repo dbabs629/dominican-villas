@@ -5,8 +5,9 @@ export default function HeroSection() {
     <section className='py-24'>
       <div className='flex justify-center w-3/5 p-20 mx-auto space-x-20 border shadow rounded-xl'>
         <div className='relative flex flex-col w-1/2'>
+          <span className='absolute w-full h-full bg-gray-300 animate-pulse rounded-xl' />
           <Image
-            className='max-w-full bg-gray-300 rounded-xl'
+            className='max-w-full rounded-xl'
             src='/images/mamas-paradise/mamas-paradise-smaller.jpg'
             placeholder='blur'
             blurDataURL='/images/mamas-paradise/mamas-paradise-img-2.jpg'
@@ -14,6 +15,7 @@ export default function HeroSection() {
             style={{ objectFit: 'cover' }}
             alt='something'
           />
+          <span className='absolute w-full h-full bg-gray-300 animate-pulse rounded-xl' />
           <Image
             className='max-w-full rounded-xl'
             src='/images/sunset-oasis/sunset-oasis-img-2.jpg'

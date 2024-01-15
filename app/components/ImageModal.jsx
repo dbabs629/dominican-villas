@@ -15,7 +15,7 @@ export default function ImageModal({ displayModal, setDisplayModal, imgPath, cur
             <FontAwesomeIcon icon={faXmark} className='static text-5xl' />
           </button>
           <Image
-            className='p-10 mt-4'
+            className='p-4'
             src={`${imgPath}${currentImgNum}.jpg`}
             alt='image'
             placeholder='blur'
