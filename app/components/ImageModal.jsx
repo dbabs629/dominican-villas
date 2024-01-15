@@ -19,6 +19,7 @@ export default function ImageModal({ displayModal, setDisplayModal, imgPath, cur
             src={`${imgPath}${currentImgNum}.jpg`}
             alt='image'
             fill={true}
+            style={{ objectFit: 'contain' }}
             onClick={handleClick}
           />
         </div>

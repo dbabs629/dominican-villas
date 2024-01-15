@@ -14,6 +14,7 @@ export default function Carousel({ numOfImgs, imgPath, currentImgNum, setCurrent
           className='h-auto max-w-full'
           src={`${imgPath}${currentImgNum}.jpg`}
           fill={true}
+          style={{ objectFit: 'cover' }}
           alt='something 2'
           onClick={() => setDisplayModal(false)}
         />
