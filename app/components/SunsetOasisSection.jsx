@@ -15,7 +15,7 @@ export default function SunsetOasisSection() {
           blurDataURL="/images/sunset-oasis/sunset-oasis-img-3.jpg"
         />
       </div>
-      <div className="xs:-bottom-10 absolute bottom-0 flex w-full flex-col space-y-4 bg-blue-400 p-6 text-white sm:-bottom-48 sm:left-20 sm:w-2/3 sm:rounded-lg sm:p-8 sm:text-lg md:w-[500px]">
+      <div className="absolute bottom-0 flex w-full flex-col space-y-4 bg-blue-400 p-6 text-white xs:-bottom-10 sm:-bottom-48 sm:left-20 sm:w-2/3 sm:rounded-lg sm:p-8 sm:text-lg md:w-[500px]">
         <h5 className="font-bold">Sunset Oasis</h5>
         <p className="md:text-justify">
           Get ready to experience the ultimate luxury family vacation in the

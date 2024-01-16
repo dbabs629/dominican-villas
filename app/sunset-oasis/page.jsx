@@ -14,15 +14,15 @@ export default function page() {
 
   return (
     <Layout>
+      <ImageModal
+        displayModal={displayModal}
+        setDisplayModal={setDisplayModal}
+        imgPath="/images/sunset-oasis/sunset-oasis-img-"
+        currentImgNum={currentImgNum}
+      />
       <main className="mx-auto w-full xl:w-11/12">
         <div>
           <PageHeading title="Sunset Oasis" />
-          <ImageModal
-            displayModal={displayModal}
-            setDisplayModal={setDisplayModal}
-            imgPath="/images/sunset-oasis/sunset-oasis-img-"
-            currentImgNum={currentImgNum}
-          />
           <Carousel
             numOfImgs={33}
             imgPath="/images/sunset-oasis/sunset-oasis-img-"
