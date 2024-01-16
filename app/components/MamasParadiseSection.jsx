@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function MamasParadiseSection() {
   return (
-    <section className="relative my-40 flex h-[525px] w-full flex-col sm:my-80 sm:h-[675px]">
+    <section className="relative mt-40 flex h-[525px] w-full flex-col sm:my-80 sm:h-[675px]">
       <div className="w-full">
         <span className="absolute h-full w-full animate-pulse rounded-xl bg-gray-300" />
         <Image
@@ -15,7 +15,7 @@ export default function MamasParadiseSection() {
           blurDataURL="/images/mamas-paradise/mamas-paradise-img-4.jpg"
         />
       </div>
-      <div className="absolute bottom-0 flex w-full flex-col space-y-4 bg-blue-400 p-6 text-white sm:-bottom-48 sm:left-20 sm:w-2/3 sm:rounded-lg sm:p-8 sm:text-lg md:w-[500px]">
+      <div className="xs:-bottom-10 absolute bottom-0 flex w-full flex-col space-y-4 bg-blue-400 p-6 text-white sm:-bottom-48 sm:left-20 sm:w-2/3 sm:rounded-lg sm:p-8 sm:text-lg md:w-[500px]">
         <h5 className="font-bold">Mama's Paradise</h5>
         <p className="md:text-justify">
           Get ready to experience the ultimate luxury family vacation in the
