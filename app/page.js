@@ -32,9 +32,9 @@ export default function Home() {
               alt='something 2'
             /> */}
           </div>
-          <div className="absolute -top-16 left-4 w-96 space-y-4 rounded-lg bg-blue-400 p-8 text-base text-white md:text-lg lg:left-12">
+          <div className="absolute -top-16 space-y-4 rounded-lg bg-blue-400 p-6 text-base text-white sm:left-4 sm:w-2/3 sm:p-8 md:text-lg lg:left-12">
             <h5 className="font-bold">Sousa, Dominican Republic</h5>
-            <p className="text-justify">
+            <p className="md:text-justify">
               Sosua is everything you want a beach town to be. Clear waters teem
               with coral, perfect for snorkeling and diving. Above sea level
               you'll find multicolored sands lined with beach shacks.

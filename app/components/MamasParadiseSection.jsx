@@ -17,7 +17,7 @@ export default function MamasParadiseSection() {
       </div>
       <div className="absolute bottom-0 flex w-full flex-col space-y-4 bg-blue-400 p-6 text-white sm:-bottom-48 sm:left-20 sm:w-2/3 sm:rounded-lg sm:p-8 sm:text-lg md:w-[500px]">
         <h5 className="font-bold">Mama's Paradise</h5>
-        <p className="text-justify">
+        <p className="md:text-justify">
           Get ready to experience the ultimate luxury family vacation in the
           heart of Sousa, Dominican Republic! Our two brand new vacation homes
           are the definition of paradise, offering everything you need for an
