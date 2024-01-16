@@ -6,17 +6,17 @@ export default function Navbar() {
   let router = usePathname();
 
   return (
-    <nav className="flex h-14 border-b border-blue-50 shadow-lg shadow-blue-50">
-      <ul className="flex w-full items-end justify-around text-center text-sm font-semibold text-primary lg:text-base">
-        <span className="basis-1/3" />
+    <nav className="flex h-14 max-w-full border-b border-blue-50 shadow-lg shadow-blue-50">
+      <ul className="flex w-full items-end justify-around text-center text-xs font-semibold text-primary sm:text-sm lg:text-base">
+        <span className="sm:basis-1/3" />
         {/* <Link className="basis-1/2" href="/">
           Dominican Vacation
         </Link> */}
         <Link
           className={
             router == "/"
-              ? "basis-1/5 border-b-[2px] border-primary px-6"
-              : "basis-1/5 px-6"
+              ? "border-b-[2px] border-primary px-2 sm:px-6"
+              : "px-2 sm:px-6"
           }
           href="/"
         >
@@ -25,8 +25,8 @@ export default function Navbar() {
         <Link
           className={
             router == "/calendar"
-              ? "basis-1/5 border-b-[2px] border-primary px-6"
-              : "basis-1/5 px-6"
+              ? "border-b-[2px] border-primary px-2 sm:px-6"
+              : "px-2 sm:px-6"
           }
           href="/calendar"
         >
@@ -35,8 +35,8 @@ export default function Navbar() {
         <Link
           className={
             router == "/mamas-paradise"
-              ? "basis-1/4 border-b-[2px] border-primary px-6"
-              : "basis-1/4 px-6"
+              ? "border-b-[2px] border-primary px-2 sm:px-6"
+              : "px-2 sm:px-6"
           }
           href="/mamas-paradise"
         >
@@ -45,8 +45,8 @@ export default function Navbar() {
         <Link
           className={
             router == "/sunset-oasis"
-              ? "basis-1/4 border-b-[2px] border-primary px-6"
-              : "basis-1/4 px-6"
+              ? "border-b-[2px] border-primary px-2 sm:px-6"
+              : "px-2 sm:px-6"
           }
           href="/sunset-oasis"
         >

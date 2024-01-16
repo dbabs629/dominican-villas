@@ -37,7 +37,7 @@ export default function page() {
             setCurrentImgNum={setCurrentImgNum}
           />
         </div>
-        <section className="mx-auto my-10 w-10/12 text-sm sm:w-2/3 sm:text-base">
+        <section className="mx-auto my-10 w-11/12 text-sm sm:w-2/3 sm:text-base">
           <article className="my-10 space-y-10">
             <SectionHeading title="About" />
             <p>
