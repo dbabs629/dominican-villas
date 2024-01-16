@@ -1,32 +1,32 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 export default function MamasParadiseSection() {
   return (
-    <section className='relative flex flex-col w-full my-40'>
-      <div className='max-w-full h-[675px]'>
-        <span className='absolute w-full h-full bg-gray-300 animate-pulse rounded-xl' />
+    <section className="relative my-40 flex h-[525px] w-full flex-col sm:my-80 sm:h-[675px]">
+      <div className="w-full">
+        <span className="absolute h-full w-full animate-pulse rounded-xl bg-gray-300" />
         <Image
-          className='h-auto max-w-full'
-          src='/images/mamas-paradise/mamas-paradise-img-1.jpg'
+          className="h-auto max-w-full object-contain object-top sm:object-cover"
+          src="/images/mamas-paradise/mamas-paradise-img-4.jpg"
           fill={true}
-          style={{ objectFit: 'cover' }}
-          alt='something 2'
-          placeholder='blur'
-          blurDataURL='/images/mamas-paradise/mamas-paradise-img-1.jpg'
+          alt="something 2"
+          placeholder="blur"
+          blurDataURL="/images/mamas-paradise/mamas-paradise-img-4.jpg"
         />
       </div>
-      <div className='absolute flex flex-col w-1/4 p-8 space-y-4 text-lg text-white bg-blue-400 rounded-lg right-20 -bottom-20'>
-        <h5 className='font-bold'>Mama's Paradise</h5>
-        <p className='font-semibold text-justify'>
-          Get ready to experience the ultimate luxury family vacation in the heart of Sousa, Dominican Republic! Our two
-          brand new vacation homes are the definition of paradise, offering everything you need for an unforgettable
-          getaway!
+      <div className="absolute bottom-0 flex w-full flex-col space-y-4 bg-blue-400 p-6 text-white sm:-bottom-48 sm:left-20 sm:w-2/3 sm:rounded-lg sm:p-8 sm:text-lg md:w-[500px]">
+        <h5 className="font-bold">Mama's Paradise</h5>
+        <p className="text-justify">
+          Get ready to experience the ultimate luxury family vacation in the
+          heart of Sousa, Dominican Republic! Our two brand new vacation homes
+          are the definition of paradise, offering everything you need for an
+          unforgettable getaway!
         </p>
-        <Link className='font-semibold underline' href='/mamas-paradise'>
+        <Link className="underline" href="/mamas-paradise">
           View Mama's Paradise
         </Link>
       </div>
     </section>
-  )
+  );
 }
