@@ -2,31 +2,35 @@ import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <section className='py-24'>
-      <div className='flex justify-center w-3/5 p-20 mx-auto space-x-20 border shadow rounded-xl'>
-        <div className='relative flex flex-col w-1/2'>
-          <span className='absolute w-full h-full bg-gray-300 animate-pulse rounded-xl' />
-          <Image
-            className='max-w-full rounded-xl'
-            src='/images/mamas-paradise/mamas-paradise-smaller.jpg'
-            placeholder='blur'
-            blurDataURL='/images/mamas-paradise/mamas-paradise-img-2.jpg'
-            fill={true}
-            style={{ objectFit: 'cover' }}
-            alt='something'
-          />
-          <span className='absolute w-full h-full bg-gray-300 animate-pulse rounded-xl' />
-          <Image
-            className='max-w-full rounded-xl'
-            src='/images/sunset-oasis/sunset-oasis-img-2.jpg'
-            placeholder='blur'
-            blurDataURL='/images/sunset-oasis/sunset-oasis-img-2.jpg'
-            fill={true}
-            style={{ objectFit: 'cover' }}
-            alt='something 2'
-          />
+    <section>
+      <div className='flex justify-center w-4/5 h-auto p-16 mx-auto mt-20 bg-blue-400 rounded-xl'>
+        <div className='flex flex-col w-full border'>
+          <div className='relative z-10 w-full h-full -top-24 -left-28'>
+            <span className='absolute w-full h-auto bg-gray-300 animate-pulse rounded-xl' />
+            <Image
+              className='h-full max-w-full rounded-xl'
+              src='/images/mamas-paradise/mamas-paradise-img-1.jpg'
+              placeholder='blur'
+              blurDataURL='/images/mamas-paradise/mamas-paradise-img-2.jpg'
+              fill={true}
+              style={{ objectFit: 'cover' }}
+              alt='something'
+            />
+          </div>
+          <div className='relative z-0 w-full h-full -top-32 -left-10'>
+            <span className='absolute w-full h-auto bg-gray-300 animate-pulse rounded-xl' />
+            <Image
+              className='h-full max-w-full rounded-xl'
+              src='/images/sunset-oasis/sunset-oasis-img-2.jpg'
+              placeholder='blur'
+              blurDataURL='/images/sunset-oasis/sunset-oasis-img-2.jpg'
+              fill={true}
+              style={{ objectFit: 'cover' }}
+              alt='something 2'
+            />
+          </div>
         </div>
-        <div className='flex flex-col w-2/5 space-y-10 text-blue-900'>
+        <div className='flex flex-col w-2/3 space-y-10 text-white'>
           <h5 className='text-xl font-semibold'>Calling All Adventure Seekers And Beach Lovers!</h5>
           <p className='text-lg text-justify'>
             Get ready to experience the ultimate luxury family vacation in the heart of Sousa, Dominican Republic! Our

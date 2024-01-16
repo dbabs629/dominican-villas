@@ -12,7 +12,6 @@ export default function Home() {
       <main>
         <div>
           <PageHeading title='Dominican Vacation Homes' />
-          <p className='pt-2 text-lg text-center text-blue-900'>Check out our two beautiful vacation homes!</p>
         </div>
         <HeroSection />
         <MamasParadiseSection />
@@ -22,7 +21,7 @@ export default function Home() {
           <div>
             <Image
               className='object-cover h-auto max-w-full rounded-xl'
-              src='/images/sousa-img-2.PNG'
+              src='/images/sousa-img-1.PNG'
               width='1875'
               height='622'
               alt='something 2'
