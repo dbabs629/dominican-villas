@@ -17,22 +17,15 @@ export default function Home() {
         <MamasParadiseSection />
         <SunsetOasisSection />
         <div className="relative my-40 flex w-full flex-col">
-          <div className="h-[400px] w-full sm:h-[500px]">
+          <div className="h-[550px] w-full md:h-[675px] lg:h-[900px]">
             <Image
-              className="h-full max-w-full object-contain sm:object-cover"
+              className="h-full max-w-full object-contain sm:object-cover sm:object-center "
               src="/images/sousa-img-1.PNG"
               fill={true}
               alt="something 2"
             />
-            {/* <Image
-              className='object-cover h-auto max-w-full rounded-xl'
-              src='/images/sousa-img-2.PNG'
-              width='746'
-              height='596'
-              alt='something 2'
-            /> */}
           </div>
-          <div className="absolute top-72 z-10 w-full space-y-4 bg-blue-400 p-6 text-base text-white xs:top-80 sm:-top-16 sm:w-[450px] sm:rounded-lg sm:p-8 md:w-[500px] md:text-lg lg:left-12">
+          <div className="absolute bottom-0 z-10 w-full space-y-4 bg-blue-400 p-6 text-sm text-white sm:-top-10 sm:bottom-auto sm:w-[450px] sm:rounded-lg sm:object-center sm:p-8 md:w-[500px] md:text-lg lg:left-12">
             <h5 className="font-bold">Sousa, Dominican Republic</h5>
             <p className="md:text-justify">
               Sosua is everything you want a beach town to be. Clear waters teem
