@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function SunsetOasisSection() {
   return (
-    <section className="relative mt-40 flex h-[525px] w-full flex-col sm:my-80 sm:h-[1000px]">
-      <div className="w-full">
+    <section className="relative mt-40 flex w-full flex-col sm:my-80">
+      <div className="h-[550px] w-full md:h-[675px] lg:h-[900px]">
         <span className="absolute h-full w-full animate-pulse rounded-xl bg-gray-300" />
         <Image
-          className="h-auto max-w-full object-contain object-top sm:object-cover"
+          className="h-auto max-w-full object-contain object-top sm:object-cover sm:object-center"
           src="/images/sunset-oasis/sunset-oasis-img-3.jpg"
           fill={true}
           alt="something 2"

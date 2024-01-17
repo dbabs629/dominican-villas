@@ -11,7 +11,7 @@ export default function Home() {
     <Layout>
       <main>
         <div>
-          <PageHeading title="Dominican Vacation Homes" />
+          <PageHeading title="Dominican Villas" />
         </div>
         <HeroSection />
         <MamasParadiseSection />

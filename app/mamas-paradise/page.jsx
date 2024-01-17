@@ -61,6 +61,10 @@ export default function page() {
             </p>
           </article>
           <article className="my-10 space-y-10">
+            <SectionHeading title="Pricing" />
+            <ul className="mx-auto h-[500px] w-11/12 rounded-xl border shadow"></ul>
+          </article>
+          <article className="my-10 space-y-10">
             <SectionHeading title="Location Information" />
             <Image
               className="z-10 w-full rounded-xl"
