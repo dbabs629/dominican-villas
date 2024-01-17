@@ -24,14 +24,14 @@ export default function page() {
         <div>
           <PageHeading title="Sunset Oasis" />
           <Carousel
-            numOfImgs={33}
+            numOfImgs={34}
             imgPath="/images/sunset-oasis/sunset-oasis-img-"
             currentImgNum={currentImgNum}
             setCurrentImgNum={setCurrentImgNum}
             setDisplayModal={setDisplayModal}
           />
           <Gallery
-            numOfImgs={33}
+            numOfImgs={34}
             imgPath="/images/sunset-oasis/sunset-oasis-img-"
             currentImgNum={currentImgNum}
             setCurrentImgNum={setCurrentImgNum}

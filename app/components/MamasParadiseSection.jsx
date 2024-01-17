@@ -15,7 +15,7 @@ export default function MamasParadiseSection() {
           blurDataURL="/images/mamas-paradise/mamas-paradise-img-4.jpg"
         />
       </div>
-      <div className="s:bottom-0 absolute bottom-20 flex w-full flex-col space-y-4 bg-blue-400 p-6 text-sm text-white sm:-bottom-48 sm:left-20 sm:w-2/3 sm:rounded-lg sm:p-8 md:w-[500px] md:text-lg">
+      <div className="absolute bottom-20 flex w-full flex-col space-y-4 bg-blue-400 p-6 text-sm text-white s:bottom-0 sm:-bottom-48 sm:left-20 sm:w-2/3 sm:rounded-lg sm:p-8 md:w-[500px] md:text-lg">
         <h5 className="font-bold">Mama's Paradise</h5>
         <p className="md:text-justify">
           Get ready to experience the ultimate luxury family vacation in the
