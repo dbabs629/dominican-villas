@@ -51,7 +51,7 @@ export default function Carousel({
   return (
     <div className="relative flex h-96 max-w-full flex-row lg:h-[675px]">
       {!loaded && (
-        <div className="absolute z-20 h-full w-full animate-pulse bg-gray-300"></div>
+        <div className="absolute z-10 h-full w-full animate-pulse bg-gray-300"></div>
       )}
       <button
         className="absolute left-0 z-10 hidden h-full bg-blue-400 px-6 text-white opacity-40 hover:opacity-80 md:block lg:px-8"
@@ -63,7 +63,7 @@ export default function Carousel({
       >
         <FontAwesomeIcon icon={faChevronLeft} className="text-2xl text-white" />
       </button>
-      <div className="relative z-30 h-auto w-full">
+      <div className="relative h-auto w-full">
         <Image
           className="h-auto max-w-full object-cover"
           src={`${imgPath}${currentImgNum}.jpg`}
