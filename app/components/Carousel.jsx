@@ -51,7 +51,7 @@ export default function Carousel({
   return (
     <div className="relative flex h-96 max-w-full flex-row lg:h-[675px]">
       {!loaded && (
-        <div className="absolute z-10 h-full w-full animate-pulse bg-gray-300"></div>
+        <div className="absolute z-20 h-full w-full animate-pulse bg-gray-300"></div>
       )}
       <button
         className="absolute left-0 z-10 hidden h-full bg-blue-400 px-6 text-white opacity-40 hover:opacity-80 md:block lg:px-8"
@@ -80,7 +80,7 @@ export default function Carousel({
         />
       </div>
       <button
-        className="absolute right-0 hidden h-full bg-blue-400 px-6 text-white opacity-40 hover:opacity-80 md:block lg:px-8"
+        className="absolute right-0 z-10 hidden h-full bg-blue-400 px-6 text-white opacity-40 hover:opacity-80 md:block lg:px-8"
         onClick={() =>
           currentImgNum + 1 > numOfImgs
             ? setCurrentImgNum(1)

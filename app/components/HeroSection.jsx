@@ -10,7 +10,6 @@ export default function HeroSection() {
             <Image
               className="h-full max-w-full object-cover sm:rounded-xl"
               src="/images/mamas-paradise/mamas-paradise-img-1.jpg"
-              quality={100}
               priority={true}
               fill={true}
               sizes="100%"
@@ -22,7 +21,6 @@ export default function HeroSection() {
             <Image
               className="h-full max-w-full object-cover sm:rounded-xl"
               src="/images/sunset-oasis/sunset-oasis-img-1.jpg"
-              quality={100}
               priority={true}
               fill={true}
               sizes="100%"

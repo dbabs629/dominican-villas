@@ -9,7 +9,6 @@ export default function MamasParadiseSection() {
         <Image
           className="h-auto max-w-full object-contain object-top sm:object-cover sm:object-center"
           src="/images/mamas-paradise/mamas-paradise-img-4.jpg"
-          quality={100}
           fill={true}
           sizes="100%"
           alt="something 2"

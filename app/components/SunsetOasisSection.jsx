@@ -9,7 +9,6 @@ export default function SunsetOasisSection() {
         <Image
           className="h-auto max-w-full object-contain object-top sm:object-cover sm:object-center"
           src="/images/sunset-oasis/sunset-oasis-img-3.jpg"
-          quality={100}
           fill={true}
           sizes="100%"
           alt="something 2"
