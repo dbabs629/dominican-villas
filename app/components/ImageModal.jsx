@@ -28,6 +28,7 @@ export default function ImageModal({
             className="object-contain p-4"
             src={`${imgPath}${currentImgNum}.jpg`}
             alt="image"
+            quality={100}
             fill={true}
             sizes="100%"
             onClick={handleClick}

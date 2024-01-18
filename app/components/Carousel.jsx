@@ -44,7 +44,7 @@ export default function Carousel({
       console.log(e.targetTouches[0].clientX);
     }
     e.target.disabled = true;
-    await delay(600);
+    await delay(300);
     e.target.disabled = false;
   };
 

@@ -4,7 +4,6 @@ import Layout from "./components/Layout";
 import HeroSection from "./components/HeroSection";
 import MamasParadiseSection from "./components/MamasParadiseSection";
 import SunsetOasisSection from "./components/SunsetOasisSection";
-import SectionHeading from "./components/SectionHeading";
 
 export default function Home() {
   return (
