@@ -70,7 +70,6 @@ export default function Carousel({
           priority={true}
           fill={true}
           sizes="100%"
-          quality={100}
           alt="something 2"
           onClick={() => setDisplayModal(false)}
           onLoad={() => setLoaded(true)}
