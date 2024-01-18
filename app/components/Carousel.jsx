@@ -67,9 +67,10 @@ export default function Carousel({
         <Image
           className="h-auto max-w-full object-cover"
           src={`${imgPath}${currentImgNum}.jpg`}
+          priority={true}
           fill={true}
-          placeholder="blur"
-          blurDataURL={`${imgPath}${currentImgNum}.jpg`}
+          sizes="100%"
+          quality={100}
           alt="something 2"
           onClick={() => setDisplayModal(false)}
           onLoad={() => setLoaded(true)}

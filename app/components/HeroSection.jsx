@@ -8,24 +8,24 @@ export default function HeroSection() {
           <div className="relative z-10 h-full w-full sm:w-4/5 lg:-left-24 lg:-top-20 lg:my-0 lg:w-full">
             <span className="absolute h-auto w-full animate-pulse rounded-xl bg-gray-300" />
             <Image
-              className="h-full max-w-full sm:rounded-xl"
+              className="h-full max-w-full object-cover sm:rounded-xl"
               src="/images/mamas-paradise/mamas-paradise-img-1.jpg"
-              placeholder="blur"
-              blurDataURL="/images/mamas-paradise/mamas-paradise-img-2.jpg"
+              quality={100}
+              priority={true}
               fill={true}
-              style={{ objectFit: "cover" }}
+              sizes="100%"
               alt="something"
             />
           </div>
           <div className="relative z-0 h-full w-full sm:w-4/5 lg:-left-10 lg:-top-24 lg:my-0 lg:w-full">
             <span className="absolute h-auto w-full animate-pulse rounded-xl bg-gray-300" />
             <Image
-              className="h-full max-w-full sm:rounded-xl"
+              className="h-full max-w-full object-cover sm:rounded-xl"
               src="/images/sunset-oasis/sunset-oasis-img-1.jpg"
-              placeholder="blur"
-              blurDataURL="/images/sunset-oasis/sunset-oasis-img-1.jpg"
+              quality={100}
+              priority={true}
               fill={true}
-              style={{ objectFit: "cover" }}
+              sizes="100%"
               alt="something 2"
             />
           </div>

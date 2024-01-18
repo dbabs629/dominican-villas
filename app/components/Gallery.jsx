@@ -13,32 +13,44 @@ export default function Gallery({
     <div className="mx-auto grid w-full max-w-full grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
       {imgListLength.map((imgNum) =>
         currentImgNum === imgNum ? (
-          <div className="relative box-border h-20 max-w-full border md:h-24">
+          <div
+            key={imgNum * 1000}
+            className="relative box-border h-20 max-w-full border md:h-24"
+          >
             {!loaded && (
-              <span className="absolute z-10 h-full w-full max-w-full animate-pulse border bg-gray-300" />
+              <span
+                key={imgNum * 2000}
+                className="absolute z-10 h-full w-full max-w-full animate-pulse border bg-gray-300"
+              />
             )}
             <Image
               key={imgNum}
-              className="z-20 cursor-pointer border-2 border-blue-400 "
+              className="z-20 h-auto cursor-pointer border-2 border-blue-400 object-cover"
               src={`${imgPath}${imgNum}.jpg`}
               fill={true}
+              sizes="(max-width: 640px) 25vw, (max-width: 768px) 16.66vw, (max-width: 768px) 12.5vw, 10vw"
               alt="something 2"
-              style={{ objectFit: "cover" }}
               onClick={() => setCurrentImgNum(imgNum)}
             />
           </div>
         ) : (
-          <div className="relative box-border h-20 max-w-full border md:h-24">
+          <div
+            key={imgNum * 1000}
+            className="relative box-border h-20 max-w-full border md:h-24"
+          >
             {!loaded && (
-              <span className="absolute z-10 h-full w-full max-w-full animate-pulse border bg-gray-300" />
+              <span
+                key={imgNum * 2000}
+                className="absolute z-10 h-full w-full max-w-full animate-pulse border bg-gray-300"
+              />
             )}
             <Image
               key={imgNum}
-              className="z-20 cursor-pointer border-white opacity-80"
+              className="z-20 h-auto cursor-pointer border-white object-cover opacity-80"
               src={`${imgPath}${imgNum}.jpg`}
               fill={true}
+              sizes="(max-width: 640px) 25vw, (max-width: 768px) 16.66vw, (max-width: 768px) 12.5vw, 10vw"
               alt="something 2"
-              style={{ objectFit: "cover" }}
               onClick={() => setCurrentImgNum(imgNum)}
               onLoad={() => imgNum === imgListLength && setLoaded(true)}
             />

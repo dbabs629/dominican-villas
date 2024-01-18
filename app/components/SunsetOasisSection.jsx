@@ -9,10 +9,10 @@ export default function SunsetOasisSection() {
         <Image
           className="h-auto max-w-full object-contain object-top sm:object-cover sm:object-center"
           src="/images/sunset-oasis/sunset-oasis-img-3.jpg"
+          quality={100}
           fill={true}
+          sizes="100%"
           alt="something 2"
-          placeholder="blur"
-          blurDataURL="/images/sunset-oasis/sunset-oasis-img-3.jpg"
         />
       </div>
       <div className="absolute bottom-20 flex w-full flex-col space-y-4 bg-blue-400 p-6 text-sm text-white s:bottom-0 sm:-bottom-48 sm:right-20 sm:w-2/3 sm:rounded-lg sm:p-8 md:w-[500px] md:text-lg">

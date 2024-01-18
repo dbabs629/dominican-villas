@@ -61,19 +61,20 @@ export default function page() {
               a backup generator so you will never run out of power.
             </p>
           </article>
-          <article className="my-10 space-y-10">
+          <article className="my-10 h-[550px] w-full space-y-10 md:h-[675px] lg:h-[900px]">
             <SectionHeading title="Pricing" />
             <ul className="mx-auto h-[500px] w-11/12 rounded-xl border shadow"></ul>
           </article>
           <article className="my-10 space-y-10">
             <SectionHeading title="Location Information" />
-            <Image
-              className="z-10 w-full rounded-xl"
-              src="/images/siednji-leon-PO3mXAkAI4c-unsplash.jpg"
-              width="5184"
-              height="3456"
-              alt="something"
-            />
+            <div className="relative h-[550px] w-full md:h-[675px] lg:h-[900px]">
+              <Image
+                className="z-10 w-full rounded-xl object-contain object-top sm:object-cover sm:object-center"
+                src="/images/siednji-leon-PO3mXAkAI4c-unsplash.jpg"
+                fill={true}
+                alt="something"
+              />
+            </div>
             <p>
               These two villas have everything you will ever need on your
               vacation. It is located 15 minutes away from the airport, a 5

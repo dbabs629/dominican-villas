@@ -25,13 +25,11 @@ export default function ImageModal({
             <FontAwesomeIcon icon={faXmark} className="static text-5xl" />
           </button>
           <Image
-            className="p-4"
+            className="object-contain p-4"
             src={`${imgPath}${currentImgNum}.jpg`}
             alt="image"
-            placeholder="blur"
-            blurDataURL={`${imgPath}${currentImgNum}.jpg`}
             fill={true}
-            style={{ objectFit: "contain" }}
+            sizes="100%"
             onClick={handleClick}
           />
         </div>

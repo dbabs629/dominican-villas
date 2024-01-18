@@ -62,19 +62,18 @@ export default function page() {
           </article>
           <article className="my-10 space-y-10">
             <SectionHeading title="Amenities" />
-            <ul className="mx-auto h-[500px] w-11/12 rounded-xl border shadow"></ul>
+            <ul className="mx-auto h-[500px] rounded-xl border shadow"></ul>
           </article>
           <article className="my-10 space-y-10">
             <SectionHeading title="Pricing" />
-            <ul className="mx-auto h-[500px] w-11/12 rounded-xl border shadow"></ul>
+            <ul className="mx-auto h-[500px] rounded-xl border shadow"></ul>
           </article>
-          <article className="my-10 space-y-10">
+          <article className="relative my-10 space-y-10">
             <SectionHeading title="Location Information" />
             <Image
-              className="z-10 w-full rounded-xl"
+              className="z-10 w-full rounded-xl object-contain object-top sm:object-cover sm:object-center"
               src="/images/siednji-leon-PO3mXAkAI4c-unsplash.jpg"
-              width="5184"
-              height="3456"
+              fill={true}
               alt="something"
             />
             <p>

@@ -21,7 +21,9 @@ export default function Home() {
             <Image
               className="h-full max-w-full object-contain sm:object-cover sm:object-center "
               src="/images/sousa-img-1.PNG"
+              quality={100}
               fill={true}
+              sizes="100%"
               alt="something 2"
             />
           </div>
