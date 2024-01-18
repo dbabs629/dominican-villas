@@ -63,7 +63,7 @@ export default function Carousel({
       >
         <FontAwesomeIcon icon={faChevronLeft} className="text-2xl text-white" />
       </button>
-      <div className="relative h-auto w-full">
+      <div className="relative z-30 h-auto w-full">
         <Image
           className="h-auto max-w-full object-cover"
           src={`${imgPath}${currentImgNum}.jpg`}
