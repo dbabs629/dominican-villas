@@ -5,7 +5,7 @@ export default function SunsetOasisSection() {
   return (
     <section className="relative mt-40 flex w-full flex-col sm:my-80">
       <div className="h-[550px] w-full md:h-[675px] lg:h-[900px]">
-        <span className="absolute h-1/2 w-full animate-pulse rounded-xl bg-gray-300 sm:h-full" />
+        <span className="absolute h-1/2 w-full animate-pulse bg-gray-300 sm:h-full" />
         <Image
           className="h-auto max-w-full object-contain object-top sm:object-cover sm:object-center"
           src="/images/sunset-oasis/sunset-oasis-img-3.jpg"

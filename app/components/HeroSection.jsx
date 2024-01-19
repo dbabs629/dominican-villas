@@ -5,10 +5,10 @@ export default function HeroSection() {
     <section>
       <div className="mx-auto mt-20 flex h-auto w-full flex-col items-center justify-center bg-blue-400 pb-8 sm:w-11/12 sm:rounded-xl sm:p-8 lg:w-11/12 lg:flex-row lg:items-start lg:p-16 2xl:w-2/3">
         <div className="m-0 mb-4 flex h-[700px] w-full flex-col items-center space-x-0 space-y-4 p-0 md:h-[300px] md:flex-row md:space-x-4 md:space-y-0 lg:h-[700px] lg:flex-col lg:space-x-0 xl:h-[900px]">
-          <div className="relative z-10 h-full w-full sm:w-4/5 lg:-left-24 lg:-top-20 lg:my-0 lg:w-full">
-            <span className="absolute h-auto w-full animate-pulse rounded-xl bg-gray-300" />
+          <div className="relative h-full w-full sm:w-4/5 lg:-left-24 lg:-top-20 lg:my-0 lg:w-full">
+            <span className="absolute z-10 h-full w-full animate-pulse rounded-xl bg-gray-300" />
             <Image
-              className="h-full max-w-full object-cover sm:rounded-xl"
+              className="z-20 h-full max-w-full object-cover sm:rounded-xl"
               src="/images/mamas-paradise/mamas-paradise-img-1.jpg"
               priority={true}
               fill={true}
@@ -16,10 +16,10 @@ export default function HeroSection() {
               alt="something"
             />
           </div>
-          <div className="relative z-0 h-full w-full sm:w-4/5 lg:-left-10 lg:-top-24 lg:my-0 lg:w-full">
-            <span className="absolute h-auto w-full animate-pulse rounded-xl bg-gray-300" />
+          <div className="relative h-full w-full sm:w-4/5 lg:-left-10 lg:-top-24 lg:my-0 lg:w-full">
+            <span className="absolute z-10 h-full w-full animate-pulse rounded-xl bg-gray-300" />
             <Image
-              className="h-full max-w-full object-cover sm:rounded-xl"
+              className="z-10 h-full max-w-full object-cover sm:rounded-xl"
               src="/images/sunset-oasis/sunset-oasis-img-1.jpg"
               priority={true}
               fill={true}
