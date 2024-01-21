@@ -37,10 +37,10 @@ export default function page() {
             setCurrentImgNum={setCurrentImgNum}
           />
         </div>
-        <section className="mx-auto my-10 w-11/12 text-sm sm:w-2/3 sm:text-base">
-          <article className="my-10 space-y-10">
+        <section className="mx-auto my-10 w-full text-sm sm:w-11/12 sm:text-base lg:w-2/3">
+          <article className="mx-auto my-20 w-full space-y-10 p-20 pb-40 text-blue-900 sm:rounded-xl sm:shadow">
             <SectionHeading title="About" />
-            <p>
+            <p className="text-sm md:text-base">
               This 3 bedroom villa can sleep up to 6 people, with the primary
               bedroom located on the 2nd floor and has a king-size bed and
               balcony. There is a safe in the primary bedroom. The other 2
@@ -61,9 +61,9 @@ export default function page() {
               of power. Infant playpen, walker and booster seat are included.
             </p>
           </article>
-          <article className="my-10 flex flex-col items-center justify-center space-y-10 rounded-xl bg-blue-400 p-10 text-white shadow">
+          <article className="mx-auto my-10 flex w-full flex-col items-center justify-center space-y-10 bg-blue-400 py-10 text-white shadow sm:rounded-xl">
             <SectionHeading title="Amenities" />
-            <ul className="amenities mx-auto grid h-[500px] w-full grid-cols-3">
+            <ul className="amenities mx-auto grid h-[500px] w-full grid-cols-3 sm:w-11/12">
               <i>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                   {/* !Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. */}
@@ -171,9 +171,9 @@ export default function page() {
               </i>
             </ul>
           </article>
-          <article className="my-10 h-[550px] w-full space-y-10 md:h-[675px] lg:h-[900px]">
+          <article className="my-10 space-y-10 p-20 pb-40 text-blue-900 sm:rounded-xl sm:shadow">
             <SectionHeading title="Pricing" />
-            <ul className="mx-auto flex h-[500px] flex-col items-center space-y-8 rounded-xl border pt-10 shadow">
+            <ul className="mx-auto flex h-auto flex-col items-center space-y-8">
               <i>
                 1 week stay (7 night stay)......... $ 300.00 Per/ Night
                 $2,100.00
@@ -190,7 +190,7 @@ export default function page() {
                 4 week stay (28 night stay)......... $200.00 Per/ Night
                 $5,600.00
               </i>
-              <i className="italic">
+              <i className="text-center italic">
                 All prices are in Canadian Currency 3 bedrooms and sleeps (6
                 people)
               </i>
@@ -198,11 +198,12 @@ export default function page() {
           </article>
           <article className="my-10 space-y-10">
             <SectionHeading title="Location Information" />
-            <div className="relative h-[550px] w-full md:h-[675px] lg:h-[900px]">
+            <div className="relative h-[550px] w-full">
               <Image
-                className="z-10 w-full rounded-xl object-contain object-top sm:object-cover sm:object-center"
+                className="z-10 w-full object-cover object-center sm:rounded-xl sm:object-contain"
                 src="/images/siednji-leon-PO3mXAkAI4c-unsplash.jpg"
                 fill={true}
+                sizes="100%"
                 alt="something"
               />
             </div>

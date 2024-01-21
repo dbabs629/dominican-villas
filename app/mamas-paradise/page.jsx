@@ -37,10 +37,10 @@ export default function page() {
             setCurrentImgNum={setCurrentImgNum}
           />
         </div>
-        <section className="mx-auto my-10 w-11/12 text-sm sm:text-base lg:w-2/3">
-          <article className="my-10 space-y-10">
+        <section className="mx-auto my-10 w-full text-sm sm:w-11/12 sm:text-base lg:w-2/3">
+          <article className="mx-auto my-20 w-full space-y-10 p-20 pb-40 text-blue-900 sm:rounded-xl sm:shadow">
             <SectionHeading title="About" />
-            <p>
+            <p className="text-sm md:text-base">
               This 3 bedroom bungalow villa will sleep up to 10 people. 2
               bedrooms have one king-size bed and one has a safe. The third
               bedroom has 2 queen-size beds and 2 single-size beds with a play
@@ -60,9 +60,9 @@ export default function page() {
               of power. Infant playpen, walker and booster seat are included.
             </p>
           </article>
-          <article className="my-10 flex flex-col items-center justify-center space-y-10 rounded-xl bg-blue-400 p-10 text-white shadow">
+          <article className="mx-auto my-10 flex w-full flex-col items-center justify-center space-y-10 bg-blue-400 py-10 text-white shadow sm:rounded-xl">
             <SectionHeading title="Amenities" />
-            <ul className="amenities mx-auto grid h-[500px] w-full grid-cols-3">
+            <ul className="amenities mx-auto grid h-[500px] w-full grid-cols-3 sm:w-11/12">
               <i>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                   {/* !Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. */}
@@ -170,9 +170,9 @@ export default function page() {
               </i>
             </ul>
           </article>
-          <article className="my-10 space-y-10">
+          <article className="my-10 w-full space-y-10 pb-40 text-blue-900 sm:rounded-xl sm:shadow md:p-20">
             <SectionHeading title="Pricing" />
-            <ul className="mx-auto flex h-[500px] flex-col items-center space-y-8 rounded-xl border pt-10 shadow">
+            <ul className="mx-auto flex h-auto flex-col items-center space-y-8 text-center">
               <i>
                 1 week stay (7 night stay)......... $ 325.00 Per/ Night
                 $2,275.00
@@ -189,7 +189,7 @@ export default function page() {
                 4 week stay (28 night stay).......... $ 225.00 Per/ Night
                 $6,300.00
               </i>
-              <i className="italic">
+              <i className="text-center italic">
                 All prices are in Canadian Currency 3 bedrooms and sleeps (8-10
                 people)
               </i>
@@ -197,12 +197,15 @@ export default function page() {
           </article>
           <article className="relative my-10 space-y-10">
             <SectionHeading title="Location Information" />
-            <Image
-              className="z-10 w-full rounded-xl object-contain object-top sm:object-cover sm:object-center"
-              src="/images/siednji-leon-PO3mXAkAI4c-unsplash.jpg"
-              fill={true}
-              alt="something"
-            />
+            <div className="relative h-[550px] w-full">
+              <Image
+                className="z-10 w-full object-cover object-center sm:rounded-xl sm:object-contain"
+                src="/images/siednji-leon-PO3mXAkAI4c-unsplash.jpg"
+                fill={true}
+                sizes="100%"
+                alt="something"
+              />
+            </div>
             <p>
               This 3 bedroom villa has everything you will ever need on your
               vacation. It is located just 15 minutes from the airport and a 5
