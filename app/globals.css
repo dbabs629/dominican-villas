@@ -26,3 +26,13 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+
+.amenities i {
+  @apply flex h-full w-full flex-col flex-nowrap items-center justify-center text-center md:flex-row md:text-left;
+}
+.amenities svg {
+  @apply h-8 w-16 fill-white md:h-10;
+}
+.amenities p {
+  @apply h-auto w-1/2 text-sm md:text-base;
+}
