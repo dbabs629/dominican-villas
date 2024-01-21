@@ -16,36 +16,39 @@ export default function Carousel({
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
 
-  let delay = (time) => {
-    return new Promise((res) => {
-      setTimeout(res, time);
-    });
-  };
-
   const handleTouchStart = (e) => {
-    setTouchEnd(null);
     setTouchStart(e.targetTouches[0].clientX);
+    console.log("touch start: ", e.targetTouches[0].clientX);
   };
 
   const handleTouchMove = (e) => {
     setTouchEnd(e.targetTouches[0].clientX);
+    console.log("touch move: ", e.targetTouches[0].clientX);
   };
 
   const handleTouchEnd = async (e) => {
-    if (touchEnd > touchStart) {
-      currentImgNum <= 1
-        ? setCurrentImgNum(numOfImgs)
-        : setCurrentImgNum(currentImgNum - 1);
-    } else if (touchEnd < touchStart) {
-      currentImgNum + 1 > numOfImgs
-        ? setCurrentImgNum(1)
-        : setCurrentImgNum(currentImgNum + 1);
+    if (!touchEnd) {
+      console.log("No movement");
     } else {
-      console.log(e.targetTouches[0].clientX);
+      if (touchEnd > touchStart && touchEnd > touchStart + 100) {
+        console.log("touch end right: ", touchStart, touchEnd);
+        currentImgNum <= 1
+          ? setCurrentImgNum(numOfImgs)
+          : setCurrentImgNum(currentImgNum - 1);
+      } else if (touchEnd < touchStart && touchEnd < touchStart - 100) {
+        console.log("touch end left: ", touchStart, touchEnd);
+        currentImgNum + 1 > numOfImgs
+          ? setCurrentImgNum(1)
+          : setCurrentImgNum(currentImgNum + 1);
+      } else {
+        console.log("touch end else: ", touchStart, touchEnd);
+        setTouchEnd(null);
+        setTouchStart(null);
+      }
     }
-    e.target.disabled = true;
-    await delay(300);
-    e.target.disabled = false;
+    console.log("TOUCHEND COMPLETE: ", touchStart, touchEnd);
+    setTouchEnd(null);
+    setTouchStart(null);
   };
 
   return (
