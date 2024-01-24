@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="flex h-14 max-w-full border-b border-blue-50 shadow-lg shadow-blue-50">
       <ul className="flex w-full items-end justify-around text-center text-xs font-semibold text-primary sm:text-sm lg:text-base">
-        <span className="sm:basis-1/3" />
+        <span className="md:basis-1/4" />
         {/* <Link className="basis-1/2" href="/">
           Dominican Vacation
         </Link> */}

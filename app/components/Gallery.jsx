@@ -10,12 +10,12 @@ export default function Gallery({
   let imgListLength = Array.from({ length: numOfImgs }, (_, i) => i + 1);
   const [loaded, setLoaded] = useState(false);
   return (
-    <div className="mx-auto grid w-full max-w-full grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
+    <div className="mx-auto grid w-full max-w-full grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
       {imgListLength.map((imgNum) =>
         currentImgNum === imgNum ? (
           <div
             key={imgNum * 1000}
-            className="relative box-border h-20 max-w-full border md:h-24"
+            className="relative box-border h-16 max-w-full border xxs:h-20 s:h-28 md:h-28 lg:h-28 xl:h-32 2xl:h-36"
           >
             {!loaded && (
               <span
@@ -25,7 +25,7 @@ export default function Gallery({
             )}
             <Image
               key={imgNum}
-              className="z-20 h-auto cursor-pointer border-2 border-blue-400 object-cover"
+              className="z-20 h-auto max-h-full cursor-pointer border-2 border-blue-400 object-cover"
               src={`${imgPath}${imgNum}.jpg`}
               fill={true}
               sizes="(max-width: 640px) 25vw, (max-width: 768px) 16.66vw, (max-width: 768px) 12.5vw, 10vw"
@@ -36,7 +36,7 @@ export default function Gallery({
         ) : (
           <div
             key={imgNum * 1000}
-            className="relative box-border h-20 max-w-full border md:h-24"
+            className="relative box-border h-16 max-w-full border xxs:h-20 s:h-28 md:h-28 lg:h-28 xl:h-32 2xl:h-36"
           >
             {!loaded && (
               <span
@@ -46,7 +46,7 @@ export default function Gallery({
             )}
             <Image
               key={imgNum}
-              className="z-20 h-auto cursor-pointer border-white object-cover opacity-80"
+              className="z-20 h-auto max-h-full cursor-pointer border-white object-cover opacity-80"
               src={`${imgPath}${imgNum}.jpg`}
               fill={true}
               sizes="(max-width: 640px) 25vw, (max-width: 768px) 16.66vw, (max-width: 768px) 12.5vw, 10vw"

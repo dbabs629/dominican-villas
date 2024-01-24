@@ -38,7 +38,7 @@ export default function page() {
           />
         </div>
         <section className="mx-auto my-10 w-full text-sm sm:w-11/12 sm:text-base lg:w-2/3">
-          <article className="mx-auto my-20 w-full space-y-10 p-20 pb-40 text-blue-900 sm:rounded-xl sm:shadow">
+          <article className="mx-auto my-20 w-full space-y-10 p-20 pb-40 text-blue-900 sm:rounded-xl sm:border sm:shadow-lg sm:drop-shadow">
             <SectionHeading title="About" />
             <p className="text-sm md:text-base">
               This 3 bedroom villa can sleep up to 6 people, with the primary
@@ -171,7 +171,7 @@ export default function page() {
               </i>
             </ul>
           </article>
-          <article className="my-10 space-y-10 p-20 pb-40 text-blue-900 sm:rounded-xl sm:shadow">
+          <article className="sm:drop-shadowsm:shadow my-10 space-y-10 p-20 pb-40 text-blue-900 sm:rounded-xl sm:border sm:shadow-lg">
             <SectionHeading title="Pricing" />
             <ul className="mx-auto flex h-auto flex-col items-center space-y-8">
               <i>
@@ -196,8 +196,7 @@ export default function page() {
               </i>
             </ul>
           </article>
-          <article className="my-10 space-y-10">
-            <SectionHeading title="Location Information" />
+          <article className="my-10 space-y-10 pb-40 text-blue-900 sm:border sm:p-20 sm:shadow-lg sm:drop-shadow">
             <div className="relative h-[550px] w-full">
               <Image
                 className="z-10 w-full object-cover object-center sm:rounded-xl sm:object-contain"
@@ -207,7 +206,8 @@ export default function page() {
                 alt="something"
               />
             </div>
-            <p>
+            <SectionHeading title="Location Information" />
+            <p className="px-20">
               This 3 bedroom villa has everything you will ever need on your
               vacation. It is located just 15 minutes from the airport and a 5
               minute drive to the town of Sousa where you will find everything
