@@ -25,12 +25,12 @@ export default function ImageModal({
             <FontAwesomeIcon icon={faXmark} className="static text-5xl" />
           </button>
           <Image
-            className="object-contain p-4"
+            className="object-scale-down"
             src={`${imgPath}${currentImgNum}.jpg`}
             alt="image"
             quality={100}
             fill={true}
-            sizes="100%"
+            sizes="100vw"
             onClick={handleClick}
           />
         </div>
