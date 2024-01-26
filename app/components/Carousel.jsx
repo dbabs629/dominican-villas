@@ -57,18 +57,18 @@ export default function Carousel({
         <div className="absolute z-20 h-full w-full animate-pulse bg-gray-300"></div>
       )}
       <button
-        className="absolute left-0 z-10 hidden h-full bg-blue-400 px-6 text-white opacity-40 hover:opacity-80 md:block lg:px-8"
+        className="absolute left-0 z-10 hidden h-full bg-gray-900 px-6 text-white opacity-40 hover:opacity-80 active:opacity-60 md:block lg:px-8"
         onClick={() =>
           currentImgNum <= 1
             ? setCurrentImgNum(numOfImgs)
             : setCurrentImgNum(currentImgNum - 1)
         }
       >
-        <FontAwesomeIcon icon={faChevronLeft} className="text-2xl text-white" />
+        <FontAwesomeIcon icon={faChevronLeft} className="text-3xl text-white" />
       </button>
       <div className="relative h-auto w-full">
         <Image
-          className="h-auto max-w-full object-cover"
+          className="h-auto max-w-full object-cover hover:cursor-pointer active:scale-95"
           src={`${imgPath}${currentImgNum}.jpg`}
           priority={true}
           fill={true}
@@ -82,7 +82,7 @@ export default function Carousel({
         />
       </div>
       <button
-        className="absolute right-0 z-10 hidden h-full bg-blue-400 px-6 text-white opacity-40 hover:opacity-80 md:block lg:px-8"
+        className="absolute right-0 z-10 hidden h-full bg-gray-900 px-6 text-white opacity-40 hover:opacity-80 active:opacity-60 md:block lg:px-8"
         onClick={() =>
           currentImgNum + 1 > numOfImgs
             ? setCurrentImgNum(1)
@@ -91,7 +91,7 @@ export default function Carousel({
       >
         <FontAwesomeIcon
           icon={faChevronRight}
-          className="text-2xl text-white"
+          className="text-3xl text-white"
         />
       </button>
     </div>

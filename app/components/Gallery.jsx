@@ -25,7 +25,7 @@ export default function Gallery({
             )}
             <Image
               key={imgNum}
-              className="z-20 h-auto max-h-full cursor-pointer border-2 border-blue-400 object-cover"
+              className="z-20 h-auto max-h-full cursor-pointer border-2 border-blue-400 object-cover active:scale-95"
               src={`${imgPath}${imgNum}.jpg`}
               fill={true}
               sizes="(max-width: 640px) 25vw, (max-width: 768px) 16.66vw, (max-width: 768px) 12.5vw, 10vw"
@@ -46,7 +46,7 @@ export default function Gallery({
             )}
             <Image
               key={imgNum}
-              className="z-20 h-auto max-h-full cursor-pointer border-white object-cover opacity-80"
+              className="z-20 h-auto max-h-full cursor-pointer border-white object-cover opacity-80 active:scale-95"
               src={`${imgPath}${imgNum}.jpg`}
               fill={true}
               sizes="(max-width: 640px) 25vw, (max-width: 768px) 16.66vw, (max-width: 768px) 12.5vw, 10vw"

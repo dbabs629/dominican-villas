@@ -11,7 +11,7 @@ export default function page() {
 
   return (
     <Layout>
-      <main>
+      <main className="h-screen">
         <PageHeading title="Calendar" />
         {!loading && (
           <div className="mx-auto flex h-48 w-48 items-end">
@@ -23,7 +23,7 @@ export default function page() {
             <p className="animate-pulse"> Loading...</p>
           </div>
         )}
-        <article className="relative mx-auto mb-20 h-96 w-full xs:h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[700px] 2xl:h-[750px]">
+        <article className="relative mx-auto h-96 w-full xs:h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[700px] 2xl:h-[750px]">
           <span className="absolute z-0 h-auto w-full animate-pulse rounded-xl bg-gray-300" />
           <iframe
             className="z-20 mx-auto max-h-full w-full max-w-full md:w-11/12 2xl:w-10/12"
