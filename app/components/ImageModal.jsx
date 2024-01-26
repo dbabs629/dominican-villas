@@ -28,7 +28,7 @@ export default function ImageModal({
             className="object-scale-down"
             src={`${imgPath}${currentImgNum}.jpg`}
             alt="image"
-            quality={100}
+            quality={90}
             fill={true}
             sizes="100vw"
             loading="eager"
