@@ -18,35 +18,28 @@ export default function Carousel({
 
   const handleTouchStart = (e) => {
     setTouchStart(e.targetTouches[0].clientX);
-    console.log("touch start: ", e.targetTouches[0].clientX);
   };
 
   const handleTouchMove = (e) => {
     setTouchEnd(e.targetTouches[0].clientX);
-    console.log("touch move: ", e.targetTouches[0].clientX);
   };
 
   const handleTouchEnd = async (e) => {
     if (!touchEnd) {
-      console.log("No movement");
     } else {
       if (touchEnd > touchStart && touchEnd > touchStart + 100) {
-        console.log("touch end right: ", touchStart, touchEnd);
         currentImgNum <= 1
           ? setCurrentImgNum(numOfImgs)
           : setCurrentImgNum(currentImgNum - 1);
       } else if (touchEnd < touchStart && touchEnd < touchStart - 100) {
-        console.log("touch end left: ", touchStart, touchEnd);
         currentImgNum + 1 > numOfImgs
           ? setCurrentImgNum(1)
           : setCurrentImgNum(currentImgNum + 1);
       } else {
-        console.log("touch end else: ", touchStart, touchEnd);
         setTouchEnd(null);
         setTouchStart(null);
       }
     }
-    console.log("TOUCHEND COMPLETE: ", touchStart, touchEnd);
     setTouchEnd(null);
     setTouchStart(null);
   };
@@ -70,9 +63,8 @@ export default function Carousel({
         <Image
           className="h-auto max-w-full object-cover hover:cursor-pointer active:scale-95"
           src={`${imgPath}${currentImgNum}.jpg`}
-          priority={true}
           fill={true}
-          sizes="100%"
+          sizes="100vw"
           alt="something 2"
           onClick={() => setDisplayModal(false)}
           onLoad={() => setLoaded(true)}
