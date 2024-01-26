@@ -27,7 +27,7 @@ export default function ImageModal({
           <Image
             className="object-scale-down"
             src={`${imgPath}${currentImgNum}.jpg`}
-            alt="image"
+            alt={`Carousel Image of Dominican Villa ${imgPath}${currentImgNum}.jpg`}
             quality={90}
             fill={true}
             sizes="100vw"

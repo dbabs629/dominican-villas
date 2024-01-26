@@ -203,7 +203,7 @@ export default function page() {
                 fill={true}
                 sizes="100vw"
                 loading="lazy"
-                alt="something"
+                alt="Sousa Beach Img"
               />
             </div>
             <SectionHeading title="Location Information" />

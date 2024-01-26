@@ -12,8 +12,8 @@ export default function HeroSection() {
               src="/images/mamas-paradise/mamas-paradise-img-1.jpg"
               priority={true}
               fill={true}
-              sizes="100%"
-              alt="something"
+              sizes="100vw"
+              alt="Image of Dominican Villa mamas-paradise-img-4.jpg"
             />
           </div>
           <div className="relative h-full w-full sm:w-4/5 lg:-left-10 lg:-top-24 lg:my-0 lg:w-full">
@@ -23,8 +23,8 @@ export default function HeroSection() {
               src="/images/sunset-oasis/sunset-oasis-img-1.jpg"
               priority={true}
               fill={true}
-              sizes="100%"
-              alt="something 2"
+              sizes="100vw"
+              alt="Image of Dominican Villa sunset-oasis-img-3.jpg"
             />
           </div>
         </div>

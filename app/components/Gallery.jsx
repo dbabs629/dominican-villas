@@ -29,7 +29,7 @@ export default function Gallery({
               src={`${imgPath}${imgNum}.jpg`}
               fill={true}
               sizes="(max-width: 640px) 25vw, (max-width: 768px) 16.66vw, (max-width: 768px) 12.5vw, 10vw"
-              alt="something 2"
+              alt={`Image of Dominican Villa ${imgPath}${currentImgNum}.jpg`}
               onClick={() => setCurrentImgNum(imgNum)}
             />
           </div>
@@ -50,7 +50,7 @@ export default function Gallery({
               src={`${imgPath}${imgNum}.jpg`}
               fill={true}
               sizes="(max-width: 640px) 25vw, (max-width: 768px) 16.66vw, (max-width: 768px) 12.5vw, 10vw"
-              alt="something 2"
+              alt={`Image of Dominican Villa ${imgPath}${currentImgNum}.jpg`}
               onClick={() => setCurrentImgNum(imgNum)}
               onLoad={() => imgNum === imgListLength && setLoaded(true)}
             />

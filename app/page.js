@@ -24,7 +24,7 @@ export default function Home() {
               quality={100}
               fill={true}
               sizes="100vw"
-              alt="something 2"
+              alt="Sousa Google Maps Image"
             />
           </div>
           <div className="absolute bottom-0 z-10 w-full space-y-4 bg-blue-400 p-6 text-sm text-white sm:-top-10 sm:bottom-auto sm:w-[450px] sm:rounded-lg sm:object-center sm:p-8 md:w-[500px] md:text-lg lg:left-12 2xl:w-[700px] 2xl:text-2xl">
