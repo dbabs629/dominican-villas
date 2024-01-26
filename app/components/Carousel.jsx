@@ -61,7 +61,7 @@ export default function Carousel({
       </button>
       <div className="relative h-auto w-full">
         <Image
-          className="h-auto max-w-full object-cover hover:cursor-pointer active:scale-95"
+          className="h-auto max-w-full object-cover hover:cursor-pointer"
           src={`${imgPath}${currentImgNum}.jpg`}
           fill={true}
           sizes="100vw"
