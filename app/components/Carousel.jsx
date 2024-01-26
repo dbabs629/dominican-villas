@@ -66,6 +66,7 @@ export default function Carousel({
           fill={true}
           sizes="100vw"
           alt="something 2"
+          loading="eager"
           onClick={() => setDisplayModal(false)}
           onLoad={() => setLoaded(true)}
           onTouchStart={handleTouchStart}

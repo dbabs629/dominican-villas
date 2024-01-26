@@ -31,6 +31,7 @@ export default function ImageModal({
             quality={100}
             fill={true}
             sizes="100vw"
+            loading="eager"
             onClick={handleClick}
           />
         </div>
