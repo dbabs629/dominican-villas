@@ -37,7 +37,7 @@ export default function page() {
             setCurrentImgNum={setCurrentImgNum}
           />
         </div>
-        <section className="mx-auto my-10 w-full text-sm sm:w-11/12 sm:text-base lg:w-2/3">
+        <section className="mx-auto my-10 w-full max-w-[800px] text-sm sm:w-11/12 sm:text-base lg:w-2/3">
           <article className="mx-auto my-20 w-full space-y-10 p-20 pb-40 text-blue-900 sm:rounded-xl sm:border sm:shadow-lg sm:drop-shadow">
             <SectionHeading title="About" />
             <p className="text-sm md:text-base">
@@ -61,9 +61,9 @@ export default function page() {
               of power. Infant playpen, walker and booster seat are included.
             </p>
           </article>
-          <article className="mx-auto my-10 flex w-full flex-col items-center justify-center space-y-10 bg-blue-400 py-10 text-white shadow sm:rounded-xl">
+          <article className="mx-auto my-10 flex w-full flex-col items-center justify-center space-y-10 bg-blue-400 py-10 text-white shadow sm:rounded-xl sm:shadow-lg sm:drop-shadow">
             <SectionHeading title="Amenities" />
-            <ul className="amenities mx-auto grid h-[500px] w-full grid-cols-3 sm:w-11/12">
+            <ul className="amenities mx-auto grid h-[500px] w-full grid-cols-3 sm:w-11/12 ">
               <i>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                   {/* !Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. */}
@@ -196,7 +196,7 @@ export default function page() {
               </i>
             </ul>
           </article>
-          <article className="my-10 space-y-10 pb-40 text-blue-900 sm:border sm:p-20 sm:shadow-lg sm:drop-shadow">
+          <article className="my-10 space-y-10 pb-40 text-blue-900 sm:rounded-xl sm:border sm:p-20 sm:shadow-lg sm:drop-shadow">
             <div className="relative h-[550px] w-full">
               <Image
                 className="z-10 w-full object-cover object-center sm:rounded-xl sm:object-contain"
@@ -207,7 +207,7 @@ export default function page() {
               />
             </div>
             <SectionHeading title="Location Information" />
-            <p className="px-20">
+            <p>
               This 3 bedroom villa has everything you will ever need on your
               vacation. It is located just 15 minutes from the airport and a 5
               minute drive to the town of Sousa where you will find everything
