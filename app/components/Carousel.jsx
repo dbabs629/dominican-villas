@@ -65,7 +65,7 @@ export default function Carousel({
           src={`${imgPath}${currentImgNum}.jpg`}
           fill={true}
           sizes="100vw"
-          alt="something 2"
+          alt={`Carousel Image of Dominican Villa ${imgPath}${currentImgNum}.jpg`}
           loading="eager"
           onClick={() => setDisplayModal(false)}
           onLoad={() => setLoaded(true)}
