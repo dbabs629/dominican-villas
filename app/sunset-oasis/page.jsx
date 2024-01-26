@@ -200,9 +200,10 @@ export default function page() {
             <div className="relative h-[550px] w-full">
               <Image
                 className="z-10 w-full object-cover object-center sm:rounded-xl sm:object-contain"
-                src="/images/sosua-beach-2.webp"
+                src="/images/sosua-beach-3.jpg"
                 fill={true}
-                sizes="100%"
+                sizes="100vw"
+                loading="lazy"
                 alt="something"
               />
             </div>

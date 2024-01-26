@@ -201,7 +201,8 @@ export default function page() {
                 className="z-10 w-full object-cover object-center sm:rounded-xl sm:object-contain"
                 src="/images/sosua-beach-1.webp"
                 fill={true}
-                sizes="100%"
+                sizes="100vw"
+                loading="lazy"
                 alt="something"
               />
             </div>
