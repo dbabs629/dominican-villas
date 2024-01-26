@@ -45,7 +45,7 @@ export default function Carousel({
   };
 
   return (
-    <div className="relative flex h-96 max-w-full flex-row lg:h-[675px]">
+    <div className="relative flex h-96 max-w-full flex-row lg:h-[675px] xl:h-[750px] 2xl:h-[900px]">
       {!loaded && (
         <div className="absolute z-20 h-full w-full animate-pulse bg-gray-300"></div>
       )}
