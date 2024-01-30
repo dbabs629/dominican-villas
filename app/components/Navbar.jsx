@@ -16,7 +16,7 @@ export default function Navbar() {
           className={
             router == "/"
               ? "border-b-[2px] border-primary px-2 active:scale-95 sm:px-6"
-              : "px-2 active:scale-95 sm:px-6"
+              : "border-b-[2px] border-white px-2 active:scale-95 sm:px-6"
           }
           href="/"
         >
@@ -26,7 +26,7 @@ export default function Navbar() {
           className={
             router == "/calendar"
               ? "border-b-[2px] border-primary px-2 active:scale-95 sm:px-6"
-              : "px-2 active:scale-95 sm:px-6"
+              : "border-b-[2px] border-white px-2 active:scale-95 sm:px-6"
           }
           href="/calendar"
         >
@@ -36,7 +36,7 @@ export default function Navbar() {
           className={
             router == "/mamas-paradise"
               ? "border-b-[2px] border-primary px-2 active:scale-95 sm:px-6"
-              : "px-1 active:scale-95 xs:px-2 sm:px-6"
+              : "border-b-[2px] border-white px-1 active:scale-95 xs:px-2 sm:px-6"
           }
           href="/mamas-paradise"
         >
@@ -46,7 +46,7 @@ export default function Navbar() {
           className={
             router == "/sunset-oasis"
               ? "border-b-[2px] border-primary px-2 active:scale-95 sm:px-6"
-              : "px-1 active:scale-95 xs:px-2 sm:px-6"
+              : "border-b-[2px] border-white px-1 active:scale-95 xs:px-2 sm:px-6"
           }
           href="/sunset-oasis"
         >
