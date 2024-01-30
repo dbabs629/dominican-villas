@@ -16,7 +16,7 @@ export default function Home() {
         <MamasParadiseSection />
         <SunsetOasisSection />
         <div className="relative flex w-full flex-col">
-          <div className="h-[550px] w-full md:h-[675px] lg:h-[900px] 2xl:h-[1200px]">
+          <div className="h-[550px] w-full md:h-[675px] lg:h-[900px]">
             <span className="absolute bottom-0 h-1/2 w-full animate-pulse bg-gray-300 sm:h-full" />
             <Image
               className="h-full max-w-full object-contain sm:object-cover sm:object-center"

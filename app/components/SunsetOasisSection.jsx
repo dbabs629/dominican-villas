@@ -10,7 +10,7 @@ export default function SunsetOasisSection() {
           className="h-auto max-w-full object-contain object-top sm:object-cover sm:object-center"
           src="/images/sunset-oasis/sunset-oasis-img-3.jpg"
           fill={true}
-          sizes="100%"
+          sizes="100vw"
           alt="Image of Dominican Villa sunset-oasis-img-3.jpg"
         />
       </div>
@@ -22,7 +22,7 @@ export default function SunsetOasisSection() {
           are the definition of paradise, offering everything you need for an
           unforgettable getaway!
         </p>
-        <Link className="underline" href="/sunset-oasis">
+        <Link className="underline active:scale-95" href="/sunset-oasis">
           View Sunset Oasis
         </Link>
       </div>

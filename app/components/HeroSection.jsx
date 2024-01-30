@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <section>
       <div className="mx-auto mt-20 flex h-auto w-full flex-col items-center justify-center bg-blue-400 pb-8 sm:w-11/12 sm:rounded-xl sm:p-8 lg:w-11/12 lg:flex-row lg:items-start lg:p-16 2xl:w-2/3">
-        <div className="m-0 mb-4 flex h-[700px] w-full flex-col items-center space-x-0 space-y-4 p-0 md:h-[300px] md:flex-row md:space-x-4 md:space-y-0 lg:h-[700px] lg:flex-col lg:space-x-0 xl:h-[900px]">
+        <div className="m-0 mb-4 flex h-[700px] w-full flex-col items-center space-x-0 space-y-4 p-0 sm:max-w-[600px] md:h-[300px] md:flex-row md:space-x-4 md:space-y-0 lg:h-[700px] lg:flex-col lg:space-x-0 xl:h-[900px]">
           <div className="relative h-full w-full sm:w-4/5 lg:-left-24 lg:-top-20 lg:my-0 lg:w-full">
             <span className="absolute z-10 h-full w-full animate-pulse rounded-xl bg-gray-300" />
             <Image
@@ -29,10 +29,10 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="flex w-4/5 flex-col space-y-10 text-white md:w-full lg:w-2/3">
-          <h5 className="text-xl font-semibold">
+          <h5 className="text-lg font-semibold md:text-xl">
             Calling All Adventure Seekers And Beach Lovers!
           </h5>
-          <p className="text-justify text-lg">
+          <p className="text-sm md:text-base lg:text-lg">
             Get ready to experience the ultimate luxury family vacation in the
             heart of Sousa, Dominican Republic! Our two brand new vacation homes
             are the definition of paradise, offering everything you need for an
@@ -41,7 +41,7 @@ export default function HeroSection() {
             only steps away from the pristine ocean, thrilling waterparks,
             stunning beaches and grocery stores!
           </p>
-          <p className="text-justify text-lg">
+          <p className="text-sm md:text-base lg:text-lg">
             Escape to paradise in the ocean view villa (sleeps 6) or the
             bungalow villa (sleeps 10). Unwind in the cozy living room, enjoy
             culinary luxury in the fully equipped kitchen and step into an
