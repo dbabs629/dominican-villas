@@ -20,7 +20,7 @@ export default function HeroSection() {
             <span className="absolute z-10 h-full w-full animate-pulse rounded-xl bg-gray-300" />
             <Image
               className="z-10 h-full max-w-full object-cover sm:rounded-xl"
-              src="/images/sunset-oasis/sunset-oasis-img-1.jpg"
+              src="/images/sunset-oasis/sunset-oasis-img-3.jpg"
               priority={true}
               fill={true}
               sizes="100vw"
