@@ -15,7 +15,7 @@ export default function Home() {
         <HeroSection />
         <MamasParadiseSection />
         <SunsetOasisSection />
-        <div className="relative mx-auto my-40 flex w-full flex-col lg:h-[760px] lg:w-11/12 2xl:w-2/3">
+        <div className="relative mx-auto my-40 flex h-[550px] w-full flex-col lg:h-[760px] lg:w-11/12 2xl:w-2/3">
           <div className=" w-full lg:rounded-xl">
             <span className="absolute bottom-0 h-1/2 w-full animate-pulse bg-gray-300 sm:h-full lg:rounded-xl" />
             <Image

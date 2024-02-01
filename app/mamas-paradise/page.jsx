@@ -38,7 +38,7 @@ export default function page() {
           />
         </div>
         <section className="mx-auto my-10 w-full max-w-[800px] text-sm sm:w-11/12 sm:text-base lg:w-2/3">
-          <article className="mx-auto my-20 w-full space-y-10 p-20 pb-40 text-blue-900 sm:rounded-xl sm:border sm:shadow-lg sm:drop-shadow">
+          <article className="mx-auto my-20 w-full space-y-10 pb-40 text-blue-900 sm:rounded-xl sm:border sm:p-20 sm:shadow-lg sm:drop-shadow">
             <SectionHeading title="About" />
             <p className="text-sm md:text-base">
               This 3 bedroom bungalow villa will sleep up to 10 people. 2
@@ -195,7 +195,7 @@ export default function page() {
               </i>
             </ul>
           </article>
-          <article className="relative my-10 space-y-10 pb-40 text-blue-900 sm:rounded-xl sm:border sm:p-20 sm:shadow-lg sm:drop-shadow">
+          <article className="my-10 space-y-10 pb-40 text-blue-900 sm:rounded-xl sm:border sm:p-20 sm:shadow-lg sm:drop-shadow">
             <div className="relative h-[550px] w-full">
               <Image
                 className="z-10 w-full object-cover object-center sm:rounded-xl sm:object-contain"
