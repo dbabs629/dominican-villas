@@ -11,7 +11,7 @@ export default function page() {
 
   return (
     <Layout>
-      <main className="h-screen">
+      <main className="h-screen max-w-[1200px]">
         <PageHeading title="Calendar" />
         {!loading && (
           <div className="mx-auto flex h-48 w-48 items-end">
