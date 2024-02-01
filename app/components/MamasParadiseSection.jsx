@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function MamasParadiseSection() {
   return (
-    <section className="lg:max-w-2/3 relative mx-auto mt-20 flex h-[550px] w-full flex-col sm:my-80 lg:h-[760px] lg:w-11/12 2xl:w-2/3">
+    <section className="lg:max-w-2/3 relative mx-auto mt-40 flex h-[550px] w-full flex-col sm:my-80 lg:h-[760px] lg:w-11/12 2xl:w-2/3">
       <div className="w-full lg:rounded-xl">
         <span className="absolute h-1/2 w-full animate-pulse bg-gray-300 sm:h-full lg:rounded-xl" />
         <Image
