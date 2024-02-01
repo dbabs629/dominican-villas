@@ -40,7 +40,7 @@ export default function page() {
         <section className="mx-auto my-10 w-full max-w-[800px] text-sm sm:w-11/12 sm:text-base lg:w-2/3">
           <article className="mx-auto my-20 w-full space-y-10 pb-40 text-blue-900 sm:rounded-xl sm:border sm:p-20 sm:shadow-lg sm:drop-shadow">
             <SectionHeading title="About" />
-            <p className="text-sm md:text-base">
+            <p className="mx-auto w-11/12 text-sm sm:w-full md:text-base">
               This 3 bedroom bungalow villa will sleep up to 10 people. 2
               bedrooms have one king-size bed and one has a safe. The third
               bedroom has 2 queen-size beds and 2 single-size beds with a play
@@ -207,7 +207,7 @@ export default function page() {
               />
             </div>
             <SectionHeading title="Location Information" />
-            <p>
+            <p className="mx-auto w-11/12 sm:w-full">
               This 3 bedroom villa has everything you will ever need on your
               vacation. It is located just 15 minutes from the airport and a 5
               minute drive to the town of Sousa where you will find everything
