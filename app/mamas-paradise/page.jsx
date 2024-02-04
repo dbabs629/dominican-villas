@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import Gallery from "../components/Gallery";
@@ -11,6 +11,7 @@ import ImageModal from "../components/ImageModal";
 export default function page() {
   const [currentImgNum, setCurrentImgNum] = useState(1);
   const [displayModal, setDisplayModal] = useState(true);
+  useEffect(() => {}, [displayModal, setDisplayModal, currentImgNum]);
 
   return (
     <Layout>
@@ -195,7 +196,7 @@ export default function page() {
               </i>
             </ul>
           </article>
-          <article className="my-10 space-y-10 pb-40 text-blue-900 sm:rounded-xl sm:border sm:p-20 sm:shadow-lg sm:drop-shadow">
+          <article className="my-10 space-y-10 pb-40 text-blue-900 sm:rounded-xl sm:border sm:p-20 sm:shadow-lg">
             <div className="relative h-[550px] w-full">
               <Image
                 className="z-10 w-full object-cover object-center sm:rounded-xl sm:object-contain"

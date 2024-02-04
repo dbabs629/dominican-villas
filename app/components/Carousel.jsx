@@ -4,7 +4,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 export default function Carousel({
   numOfImgs,
   imgPath,
@@ -43,6 +43,8 @@ export default function Carousel({
     setTouchEnd(null);
     setTouchStart(null);
   };
+
+  useEffect(() => {}, [imgPath]);
 
   return (
     <div className="relative flex h-96 max-w-full flex-row lg:h-[675px] xl:h-[750px] 2xl:h-[900px]">

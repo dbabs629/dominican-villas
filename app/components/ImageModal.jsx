@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 
 export default function ImageModal({
   displayModal,
@@ -12,6 +13,8 @@ export default function ImageModal({
     setDisplayModal(true);
     window.scrollTo(0, 0);
   };
+  useEffect(() => {}, [displayModal, setDisplayModal, imgPath, currentImgNum]);
+
   return (
     <>
       {!displayModal && (
@@ -25,7 +28,7 @@ export default function ImageModal({
             <FontAwesomeIcon icon={faXmark} className="static text-5xl" />
           </button>
           <Image
-            className="object-scale-down"
+            className="object-contain py-4"
             src={`${imgPath}${currentImgNum}.jpg`}
             alt={`Carousel Image of Dominican Villa ${imgPath}${currentImgNum}.jpg`}
             quality={90}
