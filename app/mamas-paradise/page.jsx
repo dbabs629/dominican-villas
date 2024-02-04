@@ -38,7 +38,7 @@ export default function page() {
           />
         </div>
         <section className="mx-auto my-10 w-full max-w-[800px] text-sm sm:w-11/12 sm:text-base lg:w-2/3">
-          <article className="mx-auto my-20 w-full space-y-10 pb-40 text-blue-900 sm:rounded-xl sm:border sm:p-20 sm:shadow-lg sm:drop-shadow">
+          <article className="mx-auto my-20 w-full space-y-10 pb-40 text-blue-900 sm:rounded-xl sm:border sm:p-20 sm:shadow-lg">
             <SectionHeading title="About" />
             <p className="mx-auto w-11/12 text-sm sm:w-full md:text-base">
               This 3 bedroom bungalow villa will sleep up to 10 people. 2
@@ -60,7 +60,7 @@ export default function page() {
               of power. Infant playpen, walker and booster seat are included.
             </p>
           </article>
-          <article className="mx-auto my-10 flex w-full flex-col items-center justify-center space-y-10 bg-blue-400 py-10 text-white shadow sm:rounded-xl sm:shadow-lg sm:drop-shadow">
+          <article className="mx-auto my-10 flex w-full flex-col items-center justify-center space-y-10 bg-blue-400 py-10 text-white shadow sm:rounded-xl sm:shadow-lg">
             <SectionHeading title="Amenities" />
             <ul className="amenities mx-auto grid h-[500px] w-full grid-cols-3 sm:w-11/12">
               <i>
@@ -170,7 +170,7 @@ export default function page() {
               </i>
             </ul>
           </article>
-          <article className="my-10 w-full space-y-10 pb-40 text-blue-900 sm:rounded-xl sm:border sm:shadow-lg sm:drop-shadow md:p-20">
+          <article className="my-10 w-full space-y-10 pb-40 text-blue-900 sm:rounded-xl sm:border sm:shadow-lg md:p-20">
             <SectionHeading title="Pricing" />
             <ul className="mx-auto flex h-auto flex-col items-center space-y-8 text-center">
               <i>
