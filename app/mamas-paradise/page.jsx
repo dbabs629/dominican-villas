@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import Gallery from "../components/Gallery";
@@ -11,7 +11,6 @@ import ImageModal from "../components/ImageModal";
 export default function page() {
   const [currentImgNum, setCurrentImgNum] = useState(1);
   const [displayModal, setDisplayModal] = useState(true);
-  useEffect(() => {}, [displayModal, setDisplayModal, currentImgNum]);
 
   return (
     <Layout>
