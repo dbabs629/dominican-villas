@@ -44,7 +44,7 @@ export default function Carousel({
     setTouchStart(null);
   };
 
-  useEffect(() => {}, [currentImgNum]);
+  useEffect(() => {}, [currentImgNum, setCurrentImgNum]);
 
   return (
     <div className="relative flex h-96 max-w-full flex-row lg:h-[675px] xl:h-[750px] 2xl:h-[900px]">
@@ -66,7 +66,7 @@ export default function Carousel({
           className="h-auto max-w-full object-cover hover:cursor-pointer"
           src={`${imgPath}${currentImgNum}.jpg`}
           fill={true}
-          sizes="(max-width: 1024px) 100vw, 60vw"
+          sizes="(max-width: 1024px) 100vw, 90vw"
           alt={`Carousel Image of Dominican Villa ${imgPath}${currentImgNum}.jpg`}
           loading="eager"
           onClick={() => setDisplayModal(false)}
