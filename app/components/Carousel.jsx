@@ -44,7 +44,7 @@ export default function Carousel({
     setTouchStart(null);
   };
 
-  useEffect(() => {}, [imgPath]);
+  useEffect(() => {}, [currentImgNum]);
 
   return (
     <div className="relative flex h-96 max-w-full flex-row lg:h-[675px] xl:h-[750px] 2xl:h-[900px]">
