@@ -66,7 +66,7 @@ export default function Carousel({
           className="h-auto max-w-full object-cover hover:cursor-pointer"
           src={`${imgPath}${currentImgNum}.jpg`}
           fill={true}
-          sizes="100vw"
+          sizes="(max-width: 1024px) 100vw, 60vw"
           alt={`Carousel Image of Dominican Villa ${imgPath}${currentImgNum}.jpg`}
           loading="eager"
           onClick={() => setDisplayModal(false)}

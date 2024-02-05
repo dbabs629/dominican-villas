@@ -24,32 +24,32 @@ export default function Gallery({
               />
             )}
             <Image
-              key={imgNum}
+              key={imgNum * 3000}
               className="z-20 h-auto max-h-full cursor-pointer border-2 border-blue-400 object-cover active:scale-95"
               src={`${imgPath}${imgNum}.jpg`}
               fill={true}
-              sizes="(max-width: 640px) 25vw, (max-width: 768px) 16.66vw, (max-width: 768px) 12.5vw, 10vw"
+              sizes="(max-width: 640px) 25vw, (max-width: 768px) 16.66vw, (max-width: 1024px) 12.5vw, 10vw"
               alt={`Image of Dominican Villa ${imgPath}${currentImgNum}.jpg`}
               onClick={() => setCurrentImgNum(imgNum)}
             />
           </div>
         ) : (
           <div
-            key={imgNum * 1000}
+            key={imgNum * 4000}
             className="relative box-border h-16 max-w-full border xxs:h-20 s:h-28 md:h-28 lg:h-28 xl:h-32 2xl:h-36"
           >
             {!loaded && (
               <span
-                key={imgNum * 2000}
+                key={imgNum * 5000}
                 className="absolute z-10 h-full w-full max-w-full animate-pulse border bg-gray-300"
               />
             )}
             <Image
-              key={imgNum}
+              key={imgNum * 6000}
               className="z-20 h-auto max-h-full cursor-pointer border-white object-cover opacity-80 active:scale-95"
               src={`${imgPath}${imgNum}.jpg`}
               fill={true}
-              sizes="(max-width: 640px) 25vw, (max-width: 768px) 16.66vw, (max-width: 768px) 12.5vw, 10vw"
+              sizes="(max-width: 640px) 25vw, (max-width: 768px) 16.66vw, (max-width: 1024px) 12.5vw, 10vw"
               alt={`Image of Dominican Villa ${imgPath}${currentImgNum}.jpg`}
               onClick={() => setCurrentImgNum(imgNum)}
               onLoad={() => imgNum === imgListLength && setLoaded(true)}
