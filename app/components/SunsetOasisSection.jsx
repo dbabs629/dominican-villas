@@ -18,7 +18,7 @@ export default function SunsetOasisSection() {
         <h5 className="font-bold">Sunset Oasis</h5>
         <p className="md:text-justify">
           Get ready to experience the ultimate luxury family vacation in the
-          heart of Sousa, Dominican Republic! Our two brand new vacation homes
+          heart of Sosúa, Dominican Republic! Our two brand new vacation homes
           are the definition of paradise, offering everything you need for an
           unforgettable getaway!
         </p>

@@ -33,7 +33,7 @@ export default function HeroSection() {
         </h5>
         <p className="text-sm md:text-base lg:text-lg">
           Get ready to experience the ultimate luxury family vacation in the
-          heart of Sousa, Dominican Republic! Our two brand new vacation homes
+          heart of Sosúa, Dominican Republic! Our two brand new vacation homes
           are the definition of paradise, offering everything you need for an
           unforgettable getaway! Located just 15 minutes away from the airport,
           convenience is at your fingertips and guess what? You are only steps

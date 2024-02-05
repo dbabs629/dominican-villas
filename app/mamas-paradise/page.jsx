@@ -203,14 +203,14 @@ export default function page() {
                 fill={true}
                 sizes="100vw"
                 loading="lazy"
-                alt="Sousa Beach Img"
+                alt="Sosúa Beach Img"
               />
             </div>
             <SectionHeading title="Location Information" />
             <p className="mx-auto w-11/12 sm:w-full">
               This 3 bedroom villa has everything you will ever need on your
               vacation. It is located just 15 minutes from the airport and a 5
-              minute drive to the town of Sousa where you will find everything
+              minute drive to the town of Sosúa where you will find everything
               you need. 3 Beaches, grocery stores, banks, a hospital, shopping
               and over 100 restaurants. Take a 15 minute drive to the town of
               Cabarete and enjoy a nice dinner on the beach, watch the cruise

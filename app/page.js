@@ -20,17 +20,17 @@ export default function Home() {
             <span className="absolute bottom-0 h-1/2 w-full animate-pulse bg-gray-300 sm:h-full lg:rounded-xl" />
             <Image
               className="h-full max-w-full object-contain sm:object-cover sm:object-center lg:rounded-xl"
-              src="/images/sousa-img-1.PNG"
+              src="/images/sosua-img-1.PNG"
               quality={100}
               fill={true}
               sizes="100vw"
-              alt="Sousa Google Maps Image"
+              alt="Sosúa Google Maps Image"
             />
           </div>
           <div className="absolute bottom-0 z-10 w-full space-y-4 bg-blue-400 p-6 text-sm text-white sm:-top-10 sm:bottom-auto sm:w-[450px] sm:rounded-lg sm:object-center sm:p-8 md:w-[500px] md:text-lg lg:left-12 2xl:w-[600px] 2xl:text-2xl">
-            <h5 className="font-bold">Sousa, Dominican Republic</h5>
+            <h5 className="font-bold">Sosúa, Dominican Republic</h5>
             <p className="md:text-justify">
-              Sosua is everything you want a beach town to be. Clear waters teem
+              Sosúa is everything you want a beach town to be. Clear waters teem
               with coral, perfect for snorkeling and diving. Above sea level
               you'll find multicolored sands lined with beach shacks.
             </p>
