@@ -28,7 +28,7 @@ export default function ImageModal({
             <FontAwesomeIcon icon={faXmark} className="static text-5xl" />
           </button>
           <Image
-            className="object-contain py-4"
+            className="m-auto max-h-[95%] object-contain p-4"
             src={`${imgPath}${currentImgNum}.jpg`}
             alt={`Carousel Image of Dominican Villa ${imgPath}${currentImgNum}.jpg`}
             quality={90}
