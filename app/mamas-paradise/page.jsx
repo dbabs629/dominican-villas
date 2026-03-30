@@ -174,15 +174,15 @@ export default function page() {
             <SectionHeading title="Pricing" />
             <ul className="mx-auto flex h-auto flex-col items-center space-y-8 text-center">
               <p>
-                1 week stay (7 night stay)......... $275.00 Per/ Night $1,925.00
+                1 week stay (7 night stay)......... $250.00 Per/ Night $1,750.00
               </p>
               <p>
-                2 week stay (14 night stay)......... $250.00 Per/ Night
-                $3,500.00
+                2 week stay (14 night stay)......... $225.00 Per/ Night
+                $3,150.00
               </p>
               <p>
-                3 week stay (21 night stay)......... $225.00 Per/ Night
-                $4,725.00
+                3 week stay (21 night stay)......... $200.00 Per/ Night
+                $4,200.00
               </p>
               <p>
                 4 week stay (28 night stay).......... $175.00 Per/ Night
@@ -191,6 +191,10 @@ export default function page() {
               <i className="text-center italic">
                 All prices are in Canadian Currency 3 bedrooms and sleeps (8-10
                 people)
+              </i>
+              <i className="text-center italic">
+                4th bedroom also available for extra $75.00 per night (will
+                sleep 10-12 people)
               </i>
             </ul>
           </article>
