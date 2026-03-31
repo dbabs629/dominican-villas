@@ -193,7 +193,7 @@ export default function page() {
                 people)
               </i>
               <i className="text-center italic">
-                4th bedroom also available for extra $75.00 per night (will
+                4th bedroom also available for an extra $75.00 per night (will
                 sleep 10-12 people)
               </i>
             </ul>
