@@ -186,7 +186,7 @@ export default function page() {
               </p>
               <p>
                 4 week stay (28 night stay).......... $175.00 Per/ Night
-                $5,250.00
+                $4,900.00
               </p>
               <i className="text-center italic">
                 All prices are in Canadian Currency 3 bedrooms and sleeps (8-10
